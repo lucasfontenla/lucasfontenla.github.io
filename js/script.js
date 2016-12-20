@@ -29,11 +29,5 @@
 		$("#navbar_pin").addClass("navbar-fixed");
 	}
 
-	$('.button-collapse').sideNav({
-		menuWidth: 200,
-		edge: 'left',
-		draggable: true
-	});
-
   });
 })(jQuery);

@@ -92,9 +92,10 @@ footer h5 {
 /* main */
 /* profile picture */
 #col_ppicture_mobile {
-  width: 65%;
-  height: 65%;
+  width: 60%;
+  height: 60%;
   margin-top: 8%;
+  margin-left: -5%;
 }
 
 #col_name_mobile {

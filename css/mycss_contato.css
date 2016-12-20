@@ -1,0 +1,143 @@
+/* NAV */
+/* nav text */
+nav li a {
+  text-transform: uppercase;
+}
+
+/* nav icon mobile */
+#menu_button {
+  font-size: 135%;
+}
+
+#line_under_nav {
+  min-height: 1.5vh;
+  padding: 0;
+  background-image: linear-gradient(to right, #f50057, #f44336, #ff5722);
+  margin: 0;
+}
+
+nav a {
+  font-size: 140%;
+}
+
+/* MAIN */
+/* index content */
+#icon_social_main {
+  color: #263238;
+  font-size: 200%;
+  padding-left: 2%;
+}
+
+.valign-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+}
+
+/* divider */
+.divider {
+  background-color: #263238;
+}
+
+/* form */
+/* label color */
+ .input-field label {
+   color: #263238;
+ }
+ /* label focus color */
+ .input-field input[type=text]:focus + label {
+   color: #263238;
+ }
+ /* label underline focus color */
+ .input-field input[type=text]:focus {
+   border-bottom: 1px solid #263238;
+   box-shadow: 0 1px 0 0 #263238;
+ }
+ /* valid color */
+ .input-field input[type=text].valid {
+   border-bottom: 1px solid #263238;
+   box-shadow: 0 1px 0 0 #263238;
+ }
+ /* invalid color */
+ .input-field input[type=text].invalid {
+   border-bottom: 1px solid #263238;
+   box-shadow: 0 1px 0 0 #263238;
+ }
+ /* icon prefix focus color */
+ .input-field .prefix.active {
+   color: #263238;
+ }
+
+ #button {
+  margin-left: 1%;
+  background-image: linear-gradient(to right, #f50057, #f44336, #ff5722);
+ }
+
+/* for the sticky footer */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+main {
+  margin-top: 0;
+  padding-top: 0;
+  flex: 1 0 auto;
+}
+
+/* FOOTER */
+/* colour */
+footer {
+  background-image: linear-gradient(to right, #f50057, #f44336, #ff5722);
+}
+
+footer h5 {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 100%;
+  height: .25vh;
+  padding-top: 2%
+}
+
+/* footer icons */
+#icon_social_footer {
+  color: white;
+  font-size: 100%;
+  padding-left: 2%;
+}
+
+#icon_social_footer:hover {
+  color: #263238;
+}
+
+/* RESPONSIVE CORRECTIONS */
+/* navbar */
+
+/* main */
+/* profile picture */
+#col_ppicture_mobile {
+  width: 60%;
+  height: 60%;
+  margin-top: 8%;
+  margin-left: -5%;
+}
+
+#col_name_mobile {
+  padding: 0;
+}
+
+@media only screen and (max-width : 600px) {
+  footer h5 {
+    padding-top: 5%;
+  }
+
+  #icon_social_footer {
+  color: white;
+  font-size: 150%;
+  padding-top: 5%;
+  padding-left: 7.5%;
+  padding-right: 7.5%;
+  }
+}

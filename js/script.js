@@ -28,6 +28,5 @@
 		$("footer a i").addClass("right");
 		$("#navbar_pin").addClass("navbar-fixed");
 	}
-
   });
 })(jQuery);

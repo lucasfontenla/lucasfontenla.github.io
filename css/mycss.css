@@ -1,5 +1,12 @@
+/* NAV */
+/* nav text */
 nav li a {
   text-transform: uppercase;
+}
+
+/* nav icon mobile */
+#menu_button {
+  font-size: 135%;
 }
 
 #line_under_nav {
@@ -8,38 +15,29 @@ nav li a {
   background-image: linear-gradient(to right, #f50057, #f44336, #ff5722);
 }
 
-#icon_social {
-  color: #263238;
-  font-size: 125%;
-}
-
-#icon_social:hover {
-  color: #D9D9D9;
+/* MAIN */
+/* index content */
+#index {
+  padding-top: 5%;
 }
 
 .row #index {
   min-height: 82.5vh;
 }
 
+/* index profile picture */
 #profile_picture {
   width: 90%;
   height: 90%;
-}
-
-#index {
-  padding-top: 5%;
 }
 
 #col_ppicture {
   padding-left: 5%;
 }
 
+/* index name and text */
 #col_name {
   padding: 0;
-}
-
-#head_index {
-  padding-top: 2%;
 }
 
 .valign-wrapper {
@@ -48,6 +46,7 @@ nav li a {
   height: 75%;
 }
 
+/* for the sticky footer */
 body {
     display: flex;
     min-height: 100vh;
@@ -58,6 +57,8 @@ main {
   flex: 1 0 auto;
 }
 
+/* FOOTER */
+/* colour */
 footer {
   background-image: linear-gradient(to right, #f50057, #f44336, #ff5722);
 }
@@ -71,6 +72,7 @@ footer h5 {
   padding-top: 2%
 }
 
+/* footer icons */
 #icon_social_footer {
   color: white;
   font-size: 100%;

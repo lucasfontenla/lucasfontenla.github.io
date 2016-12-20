@@ -85,3 +85,32 @@ footer h5 {
 #icon_social_footer:hover {
   color: #263238;
 }
+
+/* RESPONSIVE CORRECTIONS */
+/* navbar */
+
+/* main */
+/* profile picture */
+#col_ppicture_mobile {
+  width: 50%;
+  height: 50%;
+  margin-top: 8%;
+}
+
+#col_name_mobile {
+  padding: 0;
+}
+
+@media only screen and (max-width : 600px) {
+  footer h5 {
+    padding-top: 5%;
+  }
+
+  #icon_social_footer {
+  color: white;
+  font-size: 150%;
+  padding-top: 5%;
+  padding-left: 7.5%;
+  padding-right: 7.5%;
+  }
+}

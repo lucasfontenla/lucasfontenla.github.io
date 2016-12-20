@@ -12,7 +12,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
-    <body class="#263238 blue-grey darken-4">
+    <body class="">
 
       <header>
         <div class="navbar-fixed">
@@ -25,12 +25,12 @@
                 <li><a class="blue-grey-text text-darken-4" href="#!">Contato</a></li>
               </ul>
 
-              <ul id="nav-mobile" class="side-nav">    
+              <ul id="slide-out" class="side-nav white">    
                 <li><a class="blue-grey-text text-darken-4" href="#">Sobre Mim</a></li>
                 <li><a class="blue-grey-text text-darken-4" href="#">Meus Projetos</a></li>
                 <li><a class="blue-grey-text text-darken-4" href="#">Contato</a></li>
               </ul>
-              <a href="#" data-activates="nav-mobile" class="button-collapse" id="menu_button"><i class="fa fa-navicon blue-grey-text text-darken-4"></i></a>
+              <a href="#" data-activates="slide-out" class="button-collapse" id="menu_button"><i class="fa fa-navicon blue-grey-text text-darken-4"></i></a>
             </div>        
           </nav>     
         </div>
@@ -39,7 +39,7 @@
         </div>
       </header>
 
-      <main>
+      <main class="#263238 blue-grey darken-4">
         <div class="row">
           <div class="valign-wrapper">
 
@@ -47,7 +47,7 @@
               <img class="responsive-image circle z-depth-3" src="imgs/profile_picture.jpg" id="profile_picture">
             </div>
 
-            <div class="col s12 m12 l4 pull-l2" id="col_name">
+            <div class="col s12 m12 l4 pull-l2 hide-on-small-only" id="col_name">
               <div class="row">
                 <div class="col s12 m12 l12">
                   <h2 class="header white-text thin">Lucas Fontenla</h2>
@@ -58,8 +58,22 @@
                 </div>              
               </div>
             </div>
-          </div>  
-        </div>
+          </div> 
+
+        <div class="row">
+          <div class="col s12 m12 l12 hide-on-med-and-up" id="col_name_mobile">
+              <div class="row">
+                <div class="col s12 m12 l12">
+                  <h2 class="header white-text thin">Lucas Fontenla</h2>
+                  <div class="divider white"></div>
+                </div>
+                <div class="col s12 m12 l12">
+                  <p class="white-text light left-align">Aqui eu vou escrever um pouco sobre mim, alguma coisa que chame atenção</p>                  
+                </div>              
+              </div>
+            </div>
+          </div> 
+        </div> 
       </main>
 
       <footer class="footer">

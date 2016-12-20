@@ -10,9 +10,10 @@ nav li a {
 }
 
 #line_under_nav {
-  min-height: 1vh;
+  min-height: 1.5vh;
   padding: 0;
   background-image: linear-gradient(to right, #f50057, #f44336, #ff5722);
+  margin: 0;
 }
 
 /* MAIN */
@@ -22,7 +23,7 @@ nav li a {
 }
 
 .row #index {
-  min-height: 82.5vh;
+  min-height: 85vh;
 }
 
 /* index profile picture */
@@ -43,7 +44,7 @@ nav li a {
 .valign-wrapper {
   position: absolute;
   width: 100%;
-  height: 75%;
+  height: 80%;
 }
 
 /* for the sticky footer */
@@ -54,6 +55,8 @@ body {
   }
 
 main {
+  margin-top: 0;
+  padding-top: 0;
   flex: 1 0 auto;
 }
 

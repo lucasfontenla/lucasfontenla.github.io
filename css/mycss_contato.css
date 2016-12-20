@@ -29,6 +29,10 @@ nav a {
   padding-top: 3%;
 }
 
+#icon_social_main:hover {
+  color: #ff5722;
+}
+
 .valign-wrapper {
   position: absolute;
   width: 100%;
@@ -102,15 +106,11 @@ footer h5 {
 }
 
 /* footer icons */
-#icon_social_footer {
-  color: white;
-  font-size: 100%;
-  padding-left: 2%;
-}
 
 #icon_social_footer:hover {
-  color: #263238;
+  color: #ff5722;
 }
+
 
 /* RESPONSIVE CORRECTIONS */
 /* navbar */

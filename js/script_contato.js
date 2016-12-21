@@ -6,11 +6,14 @@
 
 	//SMALL SCREEN ADAPTOR
 	if (screen.width < 600){
-		$("#navbar_pin").removeClass("navbar-fixed");
+		$("header #navbar_pin").removeClass("navbar-fixed");
 	}
 	else {
-		$("#navbar_pin").addClass("navbar-fixed");
+		$("header #navbar_pin").addClass("navbar-fixed");
 	}
+
+	//FORM UPDATE
+	Materialize.updateTextFields();
 
   });
 })(jQuery);

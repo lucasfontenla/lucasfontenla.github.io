@@ -19,23 +19,25 @@ nav li a {
 
 /* MAIN */
 /* index content */
-#index {
-  padding-top: 5%;
+
+/*--------------------------   TOP 5    ----------------------------*/
+#row_top5 {
+  margin-top: 3%;
 }
 
-.row #index {
-  min-height: 85vh;
+#row_top5 h2 {
+  font-size: 250%;
 }
 
-/* index profile picture */
-#profile_picture {
-  width: 90%;
-  height: 90%;
+#card_icon_dots {
+  font-size: 80%;
 }
 
-#col_ppicture {
-  padding-left: 5%;
-}
+/*--------------------------   FACULDADE     ----------------------*/
+
+/*--------------------------    PESSOAIS     ----------------------*/
+
+/*--------------------------   FACULDADE     ----------------------*/
 
 /* index name and text */
 #col_name {

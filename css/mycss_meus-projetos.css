@@ -9,11 +9,12 @@ nav li a {
   font-size: 135%;
 }
 
-#line_under_nav {
-  min-height: 1.5vh;
-  padding: 0;
-  background-image: linear-gradient(to right, #f50057, #f44336, #ff5722);
-  margin: 0;
+#tabs_color {
+  background-image: linear-gradient(to right, #37474f, #263238);
+}
+
+#navbar_pin {
+  color: white;
 }
 
 /* MAIN */

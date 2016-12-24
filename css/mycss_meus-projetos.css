@@ -7,6 +7,7 @@ nav li a {
 /* nav icon mobile */
 #menu_button {
   font-size: 135%;
+  color: #263238;
 }
 
 #tabs_color {
@@ -35,6 +36,12 @@ nav li a {
 
 .card-reveal p a {
   text-transform: uppercase;
+}
+
+@media only screen and (max-width : 1120px) and (min-width: 993px) {
+  .card-action a {
+    font-size: 80%;
+  }  
 }
 
 /*--------------------------   FACULDADE     ----------------------*/

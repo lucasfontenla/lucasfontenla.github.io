@@ -51,7 +51,7 @@ div.row {
   padding-top: 0%;
 }
 
-.row .container .section h2 {
+.row .container .section h1 {
   margin-bottom: 1.5%;
   margin-top: 1.5%;
   text-transform: capitalize;
@@ -70,6 +70,12 @@ div.row {
   .card-action a {
     font-size: 80%;
   }  
+}
+
+@media only screen and (max-width: 440px) {
+  .row .container .section h1 {
+    font-size: 300%;
+  }
 }
 
 /*--------------------------   FACULDADE     ----------------------*/

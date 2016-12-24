@@ -78,6 +78,10 @@ div.row {
   }
 }
 
+a:hover {
+  cursor: pointer;
+}
+
 /*--------------------------   FACULDADE     ----------------------*/
 p.faculdade {
   margin-top: 3%;

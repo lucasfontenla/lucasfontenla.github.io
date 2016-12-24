@@ -10,7 +10,7 @@ nav li a {
 }
 
 #tabs_color {
-  background-image: linear-gradient(to right, #37474f, #263238);
+  background-image: linear-gradient(to right, #546e7a, #263238);
 }
 
 #navbar_pin {
@@ -31,6 +31,10 @@ nav li a {
 
 #card_icon_dots {
   font-size: 80%;
+}
+
+.card-reveal p a {
+  text-transform: uppercase;
 }
 
 /*--------------------------   FACULDADE     ----------------------*/

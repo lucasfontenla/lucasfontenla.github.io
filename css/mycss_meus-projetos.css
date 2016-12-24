@@ -28,6 +28,11 @@ mark {
   padding: 0% 2% 1% 2%;
 }
 
+div.row {
+  margin-bottom: .25%;
+  padding-bottom: 0;
+}
+
 #row_top5 {
   margin-top: 3%;
 }
@@ -144,11 +149,17 @@ footer h5 {
     padding-top: 5%;
   }
 
-  #icon_social_footer {
+#icon_social_footer {
   color: white;
   font-size: 150%;
   padding-top: 5%;
   padding-left: 7.5%;
   padding-right: 7.5%;
+  padding-bottom: 5%;
   }
+
+  #row_top5 {
+   margin-top: 0%;
+  }
+
 }

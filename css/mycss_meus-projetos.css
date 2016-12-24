@@ -93,9 +93,22 @@ mark {
   font-size: 80%;
 }
 
+div.col.s12.m12.l12 ul {
+  background-image: linear-gradient(to right, #546e7a, #263238);
+}
+
+.tabs .indicator {
+  background-color: white;
+  margin-bottom: 3px;
+}
+
+.tab.col.s3.pad_tab {
+  margin-left: 4%;
+}
+
 /*--------------------------    PESSOAIS     ----------------------*/
 
-/*--------------------------   FACULDADE     ----------------------*/
+/*--------------------------   TIMELINE     ----------------------*/
 
 /* index name and text */
 #col_name {

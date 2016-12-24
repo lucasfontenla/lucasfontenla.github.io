@@ -22,12 +22,35 @@ nav li a {
 /* index content */
 
 /*--------------------------   TOP 5    ----------------------------*/
+mark {
+  background-image: linear-gradient(to right, #f50057, #f44336, #ff5722);
+  color: white;
+  padding: 0% 2% 1% 2%;
+}
+
 #row_top5 {
   margin-top: 3%;
 }
 
-#row_top5 h2 {
-  font-size: 250%;
+.row #top5_first-col {
+  margin-top: 20%;
+}
+
+.row .container #row_top5_cards {
+   margin-top: 0%;
+}
+
+.row .container .divider {
+  height: 2px;
+  margin-top: 0%;
+  padding-top: 0%;
+}
+
+.row .container .section h2 {
+  margin-bottom: 1.5%;
+  margin-top: 1.5%;
+  text-transform: capitalize;
+  font-size: 400%;
 }
 
 #card_icon_dots {

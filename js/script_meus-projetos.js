@@ -31,6 +31,9 @@
 
 	var reversed = true;
 
+	$("i.new").show();
+	$("i.old").hide();
+
 	$("a.deep-orange-text.new").click(function() {
 	  if(!reversed) {
 	  	$(function() {
@@ -38,6 +41,8 @@
 		  var x = $('.CHANGE li');
 		  $('ul.CHANGE').empty().append(x.reverse());
 		});
+		$("i.new").show();
+		$("i.old").hide();
 		reversed = true;
 	   }
 	});
@@ -49,6 +54,8 @@
 		  var x = $('.CHANGE li');
 		  $('ul.CHANGE').empty().append(x.reverse());
 		});
+		$("i.old").show();
+		$("i.new").hide();
 		reversed = false;
 	   }
 	});

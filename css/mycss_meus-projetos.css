@@ -116,6 +116,22 @@ div.col.s12.m12.l12 ul.tabs {
   margin-top: 6%;
 }
 
+.collapsible.popout.cat {
+  margin-top: 2%;
+}
+
+div.card-content p {
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: .5%;
+}
+
+div.card-content p:nth-child(1) {
+  font-size: 150%;
+  padding-bottom: 3%;
+}
+
 /*--------------------------    PESSOAIS     ----------------------*/
 
 /*--------------------------   TIMELINE     ----------------------*/

@@ -15,6 +15,8 @@
 	
 	//SMALL SCREEN ADAPTOR
 	if (screen.width < 600){
+		$("a.brand-logo").removeClass("left");
+		$("a.brand-logo").addClass("center");	
 		$("footer h5").hide();
 		$("footer a i").removeClass("right");
 		$(".container").addClass("center-align");

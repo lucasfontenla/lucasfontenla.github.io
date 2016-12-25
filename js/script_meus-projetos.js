@@ -27,6 +27,11 @@
 		$("#navbar_pin").addClass("navbar-fixed");
 	}
 
+	//TOP 5
+	if (screen.width < 600) {
+		$(".card span").addClass("left-align")
+	}
+
 	//PROJETOS DE FACULDADE --> SEMESTRE/MATÉRIA --> FILTER
 
 	var reversed = true;
@@ -59,6 +64,10 @@
 		reversed = false;
 	   }
 	});
+
+	if (screen.width < 600) {
+
+	}
 
 	//AUTO BADGES SCRIPT
 
@@ -133,6 +142,6 @@
 			$(search).text(count + " PROJETOS");
 		}
 	}
-	
+
   });
 })(jQuery);

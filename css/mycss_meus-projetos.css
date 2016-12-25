@@ -132,6 +132,29 @@ div.card-content p:nth-child(1) {
   padding-bottom: 3%;
 }
 
+@media only screen and (max-width : 600px) {
+  p.faculdade {
+    margin-top: 6%;
+    margin-bottom: 1%;
+    font-size: 100%;
+  }
+  .tab.col.s3.pad_tab {
+    margin-left: 4%;
+  }
+
+  .tab.col.s3 a {
+    font-size: 90%;
+  }
+
+  .tab.col a {
+    padding-left: 1%;
+  }
+
+  .tab.col:nth-child(1) a {
+    padding-right: 0;
+  }
+}
+
 /*--------------------------    PESSOAIS     ----------------------*/
 
 /*--------------------------   TIMELINE     ----------------------*/
@@ -180,6 +203,7 @@ footer h5 {
   color: white;
   font-size: 100%;
   padding-left: 2%;
+  padding-bottom: 2%;
 }
 
 #icon_social_footer:hover {

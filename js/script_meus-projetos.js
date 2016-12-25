@@ -60,6 +60,79 @@
 	   }
 	});
 
+	//AUTO BADGES SCRIPT
+
+	var lis = $("#test1 li");
+	var lisLenght = lis.length;
+	var categories = [];
+
+	for (var i = 0; i < lisLenght; i++){
+		var toAdd = ":nth-child(" + String(i+1) + ")";
+		toAdd = "#test1 li" + toAdd
+		var classNames = $(toAdd).attr("class").toString().split(' ');
+		$.each(classNames, function (i, className) {
+	    	categories.push(className);
+	    });
+	}
+
+	var arrayLength = categories.length;
+	var title;
+	var search;
+	var count;
+
+	for (var i = 0; i < arrayLength; i++) {
+		title = categories[i];
+		
+		search = "." + title + " div .col";
+		count = $(search).length;
+		search = "#test1 " + "." + title + " span";
+
+		if (count === 0) {
+			$(search).text("SEM PROJETOS");
+		}
+		else if (count === 1) {
+			$(search).text(count + " PROJETO");
+		}
+		else {
+			$(search).text(count + " PROJETOS");
+		}
+	}
+
+	var lis = $("#test2 #SEMESTRE li");
+	var lisLenght = lis.length;
+	var categories = [];
+	console.log(lisLenght);
+	for (var i = 0; i < lisLenght; i++){
+		var toAdd = ":nth-child(" + String(i+1) + ")";
+		toAdd = "#test2 #SEMESTRE li" + toAdd
+		var classNames = $(toAdd).attr("class").toString().split(' ');
+		$.each(classNames, function (i, className) {
+	    	categories.push(className);
+	    });
+	}
+
+	var arrayLength = categories.length;
+	var title;
+	var search;
+	var count;
+
+	for (var i = 0; i < arrayLength; i++) {
+		title = categories[i];
+		
+		search = "." + title + " div .collapsible-header";
+		count = $(search).length;
+		search = "#test2 ul " + "." + title + " span";
+
+		if (count === 0) {
+			$(search).text("SEM PROJETOS");
+		}
+		else if (count === 1) {
+			$(search).text(count + " PROJETO");
+		}
+		else {
+			$(search).text(count + " PROJETOS");
+		}
+	}
 	
   });
 })(jQuery);

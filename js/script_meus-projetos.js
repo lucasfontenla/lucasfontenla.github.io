@@ -31,7 +31,8 @@
 
 	//TOP 5
 	if (screen.width < 600) {
-		$(".card span").addClass("left-align")
+		$(".card span").addClass("left-align");
+		$("#row_top5 p").addClass("left-align");
 	}
 
 	//PROJETOS DE FACULDADE --> SEMESTRE/MATÉRIA --> FILTER
@@ -69,6 +70,7 @@
 
 	if (screen.width < 600) {
 		$("#test1 .card-content p:nth-child(2)").hide();
+		$(".dropdown-button").dropdown({hover:false});
 	}
 
 	//AUTO BADGES SCRIPT

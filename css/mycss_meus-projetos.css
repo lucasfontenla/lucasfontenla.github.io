@@ -93,7 +93,7 @@ mark {
   font-size: 80%;
 }
 
-div.col.s12.m12.l12 ul {
+div.col.s12.m12.l12 ul.tabs {
   background-image: linear-gradient(to right, #546e7a, #263238);
 }
 
@@ -104,6 +104,16 @@ div.col.s12.m12.l12 ul {
 
 .tab.col.s3.pad_tab {
   margin-left: 4%;
+}
+
+.btn {
+  margin: 1%;
+  margin-right: 2.3%;
+  background-image: linear-gradient(to right, #f50057, #f44336, #ff5722);
+}
+
+.collapsible.popout.sem {
+  margin-top: 6%;
 }
 
 /*--------------------------    PESSOAIS     ----------------------*/
@@ -200,5 +210,9 @@ footer h5 {
 
   mark.faculdade {
     font-size: 70%;
+  }
+
+  .tab.col.s3.pad_tab {
+  margin-left: 0%;
   }
 }

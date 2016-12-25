@@ -3,6 +3,7 @@
 
   	//SIDE NAV
 	$('.button-collapse').sideNav();
+	$(".dropdown-button").dropdown({hover:true});
 
 	//SMALL SCREEN ADAPTOR
 	if (screen.width < 600){
@@ -25,6 +26,33 @@
 		$("footer a i").addClass("right");
 		$("#navbar_pin").addClass("navbar-fixed");
 	}
+
+	//PROJETOS DE FACULDADE --> SEMESTRE/MATÉRIA --> FILTER
+
+	var reversed = true;
+
+	$("a.deep-orange-text.new").click(function() {
+	  if(!reversed) {
+	  	$(function() {
+		  $.fn.reverse = [].reverse;
+		  var x = $('.CHANGE li');
+		  $('ul.CHANGE').empty().append(x.reverse());
+		});
+		reversed = true;
+	   }
+	});
+
+	$("a.deep-orange-text.old").click(function() {
+	  if(reversed) {
+	  	$(function() {
+		  $.fn.reverse = [].reverse;
+		  var x = $('.CHANGE li');
+		  $('ul.CHANGE').empty().append(x.reverse());
+		});
+		reversed = false;
+	   }
+	});
+
 	
   });
 })(jQuery);

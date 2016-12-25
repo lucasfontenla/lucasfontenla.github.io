@@ -138,6 +138,10 @@ div.card-content p:nth-child(1) {
   padding-bottom: 3%;
 }
 
+.collapsible-header h5 {
+  font-size: 70%;
+}
+
 @media only screen and (max-width : 600px) {
   p.faculdade {
     margin-top: 6%;
@@ -158,6 +162,32 @@ div.card-content p:nth-child(1) {
 
   .tab.col:nth-child(1) a {
     padding-right: 0;
+  }
+
+  span.new.badge {
+    margin-left: 0;
+    border-left: 0;
+  }
+
+  #test2 .CHANGE {
+    margin-top: 18%;
+  }
+
+  #test2 .dropdown-button {
+    font-size: 85%;
+    margin-top: 2.5%;
+  }
+
+  #test1 .card-content p:nth-child(1) {
+    font-size: 110%;
+  }
+
+  #test1 .card-action a {
+    font-size: 80%;
+  }
+
+  #test1 img {
+    height: 135px;
   }
 }
 

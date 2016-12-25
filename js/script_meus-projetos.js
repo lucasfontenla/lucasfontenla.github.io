@@ -68,7 +68,7 @@
 	});
 
 	if (screen.width < 600) {
-
+		$("#test1 .card-content p:nth-child(2)").hide();
 	}
 
 	//AUTO BADGES SCRIPT
@@ -98,14 +98,25 @@
 		count = $(search).length;
 		search = "#test1 " + "." + title + " span";
 
-		if (count === 0) {
-			$(search).text("SEM PROJETOS");
-		}
-		else if (count === 1) {
-			$(search).text(count + " PROJETO");
+		if(screen.width < 600){
+			if (count === 0) {
+				$(search).text("N/A");
+			}
+			else {
+				$(search).text(count);
+			}
+
 		}
 		else {
-			$(search).text(count + " PROJETOS");
+			if (count === 0) {
+				$(search).text("SEM PROJETOS");
+			}
+			else if (count === 1) {
+				$(search).text(count + " PROJETO");
+			}
+			else {
+				$(search).text(count + " PROJETOS");
+			}
 		}
 	}
 
@@ -134,14 +145,25 @@
 		count = $(search).length;
 		search = "#test2 ul " + "." + title + " span";
 
-		if (count === 0) {
-			$(search).text("SEM PROJETOS");
-		}
-		else if (count === 1) {
-			$(search).text(count + " PROJETO");
+		if(screen.width < 600){
+			if (count === 0) {
+				$(search).text("N/A");
+			}
+			else {
+				$(search).text(count);
+			}
+
 		}
 		else {
-			$(search).text(count + " PROJETOS");
+			if (count === 0) {
+				$(search).text("SEM PROJETOS");
+			}
+			else if (count === 1) {
+				$(search).text(count + " PROJETO");
+			}
+			else {
+				$(search).text(count + " PROJETOS");
+			}
 		}
 	}
 

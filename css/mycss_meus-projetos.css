@@ -1,3 +1,8 @@
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 /* NAV */
 /* nav text */
 nav li a {
@@ -113,16 +118,19 @@ mark {
   margin-top: 2%;
 }
 
-div.card-content p {
+#row_faculdade div.card-content p {
   margin-top: 0;
   padding-top: 0;
   padding-bottom: 0;
   padding-left: .5%;
 }
 
-div.card-content p:nth-child(1) {
-  font-size: 300%;
-  padding-bottom: 3%;
+#row_faculdade div.card-content p:nth-child(1) {
+  font-size: 275%;
+}
+
+#row_faculdade div.col.card_col {
+  margin-left: 4%;
 }
 
 .collapsible-header h5 {
@@ -149,30 +157,20 @@ div.card-content p:nth-child(1) {
     border-left: 0;
   }
 
-  #test2 .CHANGE {
-    margin-top: 18%;
+  #row_faculdade div.card-content p:nth-child(1) {
+    font-size: 175%;
+    margin-bottom: 5%;
   }
 
-  #test2 .dropdown-button {
-    font-size: 85%;
-    margin-top: 2.5%;
+  #row_faculdade div.card-content p:nth-child(2) {
+    padding-right: 0;
+    text-align: justify;
+    text-justify: inter-word;
   }
 
-  #test1 .card-content p:nth-child(1) {
-    font-size: 110%;
-  }
-
-  #test1 .card-action a {
-    font-size: 80%;
-  }
-
-  #test1 img {
-    height: 135px;
-  }
-
-  div.card-content p:nth-child(1) {
-    font-size: 170%;
-    padding-bottom: 3%;
+  #row_faculdade .card-action a {
+    margin-right: 5%;
+    margin-left: 5%;
   }
 }
 

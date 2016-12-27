@@ -2,7 +2,7 @@
   $(function(){
 
   	$('.modal').modal();
-  	$('div.card-content p:nth-child(1)').addClass('light');
+  	$('div.card-content p:nth-child(1)').addClass('thin');
 
   	//SIDE NAV
 	$('.button-collapse').sideNav();
@@ -13,6 +13,7 @@
 	//SMALL SCREEN ADAPTOR
 	if (screen.width < 600){
 		$("header #navbar_pin").removeClass("navbar-fixed");
+		$('p').addClass('left-align');
 	}
 	else {
 		$("header #navbar_pin").addClass("navbar-fixed");
@@ -77,6 +78,13 @@
 		$("#test1 .card-content p:nth-child(2)").hide();
 		$(".dropdown-button").dropdown({hover:false});
 		$('#row_faculdade .card-image img').hide();
+		$('#row_faculdade .card-action a:nth-child(2)').show();
+		$('#row_faculdade .chip').hide();
+		$('#row_faculdade .card-content p').addClass('left-align');
+		$('#row_faculdade div.collapsible-header').addClass('left-align');
+	}
+	else {
+		$('#row_faculdade .card-action a:nth-child(2)').hide()
 	}
 
 	//AUTO BADGES SCRIPT

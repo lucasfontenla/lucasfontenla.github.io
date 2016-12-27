@@ -67,6 +67,7 @@
 
 			$('#modal_show_tags').modal('open');
 			$('#modal_show_tags .chip').show();
+			$("#modal_show_tags .write-here div.chip").css({'margin-bottom':'3%'});
 
 			//-----------------------------------------------------
 
@@ -98,7 +99,7 @@
 
 				//$("#modal_tags img").css({'margin-top':'1%'});
 				$("#modal_tags span.title").css({'font-size':'160%'});
-				$("li.collection-item.avatar").css({'padding-top':'2%', 'padding-bottom':'2%', 'padding-left':'25%'});
+				$("ul.collection").css({'padding-bottom':'0%', 'max-height':'65px'});
 
 			});
 

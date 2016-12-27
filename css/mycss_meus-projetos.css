@@ -172,6 +172,10 @@ mark {
     margin-right: 5%;
     margin-left: 5%;
   }
+
+  .modal div.modal-content {
+    padding-bottom: 0%;
+  }
 }
 
 /*--------------------------    PESSOAIS     ----------------------*/

@@ -136,5 +136,76 @@
 		}
 	}
 
+	//-------------------------------------------------------------------------------
+
+	var chipsText = [];
+	var chipsClasses = [];
+
+	$("#row_faculdade .chip").each(function(index){
+		var add = $(this).attr('class').split(" ");
+
+		for(var i = 0; i < add.length; i++){
+			var add_ = add[i];
+			if(add_ !== "chip"){
+				chipsClasses.push(add_);
+				add_ = $("#row_faculdade .chip." + add_).text();
+				chipsText.push(add_);
+			}
+		}
+	});
+
+	var autocomplete_string = '{';
+	var autocomplete_dict;
+	var textClass_reference = {};
+
+	for(var i = 0; i < chipsText.length; i++){
+		textClass_reference[chipsText[i]] = chipsClasses[i];
+		if(i !== (chipsText.length - 1)){
+			autocomplete_string += ('"' + chipsText[i] + '":null, ');
+		}
+		else {
+			autocomplete_string += ('"' + chipsText[i] + '":null');
+		}
+	}
+
+	autocomplete_string += "}";
+	autocomplete_dict = JSON.parse(autocomplete_string);
+
+	$('input.autocomplete').autocomplete({
+	    data: autocomplete_dict
+	});
+
+	$('ul.autocomplete-content.dropdown-content').click(function(){
+		var search_tag = $('.autocomplete').val();
+
+		$('#modal_show_tags').modal('close');
+		$('#modal_tags .modal-content ul').empty();
+
+		var chipClickedClass = textClass_reference[search_tag];
+		var chipClicked = search_tag;
+		
+		$("#modal_tags h4").text(chipClicked);
+
+		$(".card.horizontal." + chipClickedClass).each(function(index) {
+			var image = $(this).find('.card-image img').attr('src');
+			var title = $(this).find('.card-content p:nth-child(1)').text();
+			var link = $(this).find('.card-action a').attr('href');
+			var toAppend = `
+				<li class="collection-item avatar">
+                	<img src=` + image + ` alt="" class="circle">
+                	<span class="title thin">`+ title + `</span>
+	                <p></p>
+                	<a href=` + link + `>Saiba Mais</a>
+	            </li> `;
+
+	        $('#modal_tags .modal-content ul').append(toAppend);
+		});
+
+		$('#modal_tags').modal('open');
+
+		$("#modal_tags span.title").css({'font-size':'160%'});
+		$("ul.collection").css({'padding-bottom':'0%', 'max-height':'65px'});
+	});
+
   });
 })(jQuery);

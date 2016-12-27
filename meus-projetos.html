@@ -197,8 +197,8 @@
             <div class="container">
               <div class="section">
                 <h1 class="header thin"><mark class="faculdade z-depth-3">Projetos de Faculdade</mark></h1>
-                <p class="faculdade">Abaixo todos os projetos que eu realizei para os cursos de Engenharia Mecatrônica do <strong><a class="deep-orange-text" href="https://www.insper.edu.br/vestibular/engenharia/" target="_blank">Insper</a></strong> desde o início do ano de 2016.</p>
-                <p>Escolha abaixo a preferência de disposição dos projetos.</p><!-- First Contents -->
+                <p class="faculdade center-align">Abaixo estão separdos por categoria todos os projetos que eu realizei para os curso de Engenharia Mecatrônica do <strong><a class="deep-orange-text" href="https://www.insper.edu.br/vestibular/engenharia/" target="_blank">Insper</a></strong> desde o início do ano de 2016.</p>
+                <p class="center-align">Cada um deles tem uma tag (ou palavra-chave) que pode ser usada para agrupar projetos em comum. Ao clicar nela serão apresentados todos os projetos que também tem essa tag em comum.</p><!-- First Contents -->
               </div>
 
             <div class="row">
@@ -221,11 +221,13 @@
                               <div class="card-content">
                                 <p>Tug War</p>
                                 <p>Jogo online no qual ganha o competidor que pressionar mais rapidamente determinadas teclas.</p>
-                                <div class="chip 1semestre">1° Semestre</div>
-                                <div class="chip design-software">Design de Software</div>
-                                <div class="chip python_prog">Python</div>
-                                <div class="chip jogos">Jogos</div>
-                                <div class="chip online">Online</div>
+                                <div class="chip-space">
+                                  <div class="chip 1semestre">1° Semestre</div>
+                                  <div class="chip design-software">Design de Software</div>
+                                  <div class="chip python_prog">Python</div>
+                                  <div class="chip jogos">Jogos</div>
+                                  <div class="chip online">Online</div>
+                                </div>
                               </div>
                               <div class="card-action">
                                 <a href="#">Saiba Mais</a>
@@ -244,10 +246,12 @@
                               <div class="card-content">
                                 <p>Teste A/B em Site</p>
                                 <p>Com base em análses estatísticas foi possível determinar o melhor design de website.</p>
-                                <div class="chip 2semestre">2° Semestre</div>
-                                <div class="chip cdados">Ciência dos Dados</div>
-                                <div class="chip teste-a-b">Teste A/B</div>
-                                <div class="chip js_prog">JavaScript</div>
+                                <div class="chip-space">
+                                  <div class="chip 2semestre">2° Semestre</div>
+                                  <div class="chip cdados">Ciência dos Dados</div>
+                                  <div class="chip teste-a-b">Teste A/B</div>
+                                  <div class="chip js_prog">JavaScript</div>
+                                </div>
                               </div>
                               <div class="card-action">
                                 <a href="#">Saiba Mais</a>
@@ -416,7 +420,15 @@
           </div>
 
           <div class="modal-footer">
-            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Ok!</a>
+            <div class="row">
+              <div class="input-field col s8 m8 l8">
+                <input type="text" id="autocomplete-input" class="autocomplete">
+                <label for="autocomplete-input" id="autocomplete-label">Busque por Tags</label>
+              </div>
+              <div class="col s3 m3 l3">
+                <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Fechar</a>
+              </div>
+            </div>
           </div>
         </div>    
 
@@ -429,7 +441,7 @@
           </div>
 
           <div class="modal-footer">
-            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Ok!</a>
+            <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Fechar</a>
           </div>
         </div> 
 

@@ -145,12 +145,59 @@ mark {
   cursor: pointer;
 }
 
+p.faculdade {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+#row_faculdade .section p:nth-child(3) {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.chip-space {
+  padding-top: 4%;
+}
+
+#row_faculdade .card-content p:nth-child(2) {
+  padding-top: 2%;
+}
+
+#row_faculdade .card-action a {
+  font-size: 100%;
+}
+
+div.input-field {
+  padding-left: 25%;
+  margin-top: -1.5%;
+  margin-bottom: 4%;
+}
+
+div.col.s3.m3.l3 {
+  margin-top: -.5%;
+}
+
+input#autocomplete-input.autocomplete {
+  margin-left: 2%;
+}
+
+label#autocomplete-label {
+  margin-left: 2%;
+}
 
 @media only screen and (max-width : 600px) {
   p.faculdade {
     margin-top: 6%;
     margin-bottom: 1%;
-    font-size: 100%;
+    font-size: 110%;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  #row_faculdade .section p:nth-child(3) {
+    font-size: 90%;
+    text-align: justify;
+    text-justify: inter-word;
   }
 
   span.new.badge {

@@ -26,6 +26,11 @@
 
 		$('#modal_tags').modal('open');
 
+		//$("#modal_tags img").css({'margin-top':'1%'});
+		$("#modal_tags span.title").css({'font-size':'160%'});
+		$("li.collection-item.avatar").css({'padding-top':'2%', 'padding-bottom':'2%', 'padding-left':'6%'});
+
+
 
 	});
 

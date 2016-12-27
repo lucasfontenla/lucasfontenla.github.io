@@ -76,6 +76,7 @@
 	if (screen.width < 600) {
 		$("#test1 .card-content p:nth-child(2)").hide();
 		$(".dropdown-button").dropdown({hover:false});
+		$('#row_faculdade .card-image img').hide();
 	}
 
 	//AUTO BADGES SCRIPT

@@ -169,9 +169,12 @@ div.card-content p:nth-child(1) {
   #test1 img {
     height: 135px;
   }
+
+  div.card-content p:nth-child(1) {
+    font-size: 170%;
+    padding-bottom: 3%;
+  }
 }
-
-
 
 /*--------------------------    PESSOAIS     ----------------------*/
 

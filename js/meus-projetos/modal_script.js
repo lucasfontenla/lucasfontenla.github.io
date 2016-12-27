@@ -17,7 +17,7 @@
 				var toAppend = `
 					<li class="collection-item avatar">
 	                	<img src=` + image + ` alt="" class="circle">
-	                	<span class="title">`+ title + `</span>
+	                	<span class="title thin">`+ title + `</span>
 		                <p></p>
 	                	<a href=` + link + `>Saiba Mais</a>
 		            </li> `;
@@ -87,7 +87,7 @@
 					var toAppend = `
 						<li class="collection-item avatar">
 		                	<img src=` + image + ` alt="" class="circle">
-		                	<span class="title">`+ title + `</span>
+		                	<span class="title thin">`+ title + `</span>
 			                <p></p>
 		                	<a href=` + link + `>Saiba Mais</a>
 			            </li> `;

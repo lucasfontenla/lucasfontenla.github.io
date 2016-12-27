@@ -99,6 +99,19 @@ mark {
   font-size: 80%;
 }
 
+div.col.s12.m12.l12 ul.tabs {
+  background-image: linear-gradient(to right, #546e7a, #263238);
+}
+
+.tabs .indicator {
+  background-color: white;
+  margin-bottom: 3px;
+}
+
+.tab.col.s3.pad_tab {
+  margin-left: 4%;
+}
+
 .btn {
   margin: 1%;
   margin-right: 2.3%;
@@ -121,7 +134,7 @@ div.card-content p {
 }
 
 div.card-content p:nth-child(1) {
-  font-size: 300%;
+  font-size: 150%;
   padding-bottom: 3%;
 }
 
@@ -129,19 +142,26 @@ div.card-content p:nth-child(1) {
   font-size: 70%;
 }
 
-.chip {
-  margin-bottom: 0;
-}
-
-.chip:hover{
-  cursor: pointer;
-}
-
 @media only screen and (max-width : 600px) {
   p.faculdade {
     margin-top: 6%;
     margin-bottom: 1%;
     font-size: 100%;
+  }
+  .tab.col.s3.pad_tab {
+    margin-left: 4%;
+  }
+
+  .tab.col.s3 a {
+    font-size: 90%;
+  }
+
+  .tab.col a {
+    padding-left: 1%;
+  }
+
+  .tab.col:nth-child(1) a {
+    padding-right: 0;
   }
 
   span.new.badge {
@@ -170,8 +190,6 @@ div.card-content p:nth-child(1) {
     height: 135px;
   }
 }
-
-
 
 /*--------------------------    PESSOAIS     ----------------------*/
 

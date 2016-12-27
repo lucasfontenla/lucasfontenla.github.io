@@ -4,6 +4,8 @@
   	//SIDE NAV
 	$('.button-collapse').sideNav();
 	$(".dropdown-button").dropdown({hover:true});
+	$('ul.tabs').tabs();
+	$('ul.tabs').tabs('select_tab', 'tab_id');
 
 	//SMALL SCREEN ADAPTOR
 	if (screen.width < 600){

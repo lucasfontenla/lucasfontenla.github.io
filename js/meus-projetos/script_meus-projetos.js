@@ -178,6 +178,8 @@
 	$('ul.autocomplete-content.dropdown-content').click(function(){
 		var search_tag = $('.autocomplete').val();
 
+		$(".autocomplete").val('');
+
 		$('#modal_show_tags').modal('close');
 		$('#modal_tags .modal-content ul').empty();
 

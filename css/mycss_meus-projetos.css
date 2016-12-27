@@ -224,6 +224,10 @@ label#autocomplete-label {
   .modal div.modal-content {
     padding-bottom: 0%;
   }
+
+  input#autocomplete-input.autocomplete {
+    margin-right: 20%;
+  }
 }
 
 /*--------------------------    PESSOAIS     ----------------------*/

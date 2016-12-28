@@ -228,6 +228,16 @@ label#autocomplete-label {
   input#autocomplete-input.autocomplete {
     margin-right: 20%;
   }
+
+  #row_faculdade .card-action a {
+    font-size: 100%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  #row_faculdade .card-action a {
+    font-size: 85%;
+  }
 }
 
 /*--------------------------    PESSOAIS     ----------------------*/

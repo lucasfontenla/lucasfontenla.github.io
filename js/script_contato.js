@@ -18,7 +18,7 @@
 	Materialize.updateTextFields();
 
 	$("#button_send").click(function(){
-		/*
+		
 		var answersDir = $("input");
 		answersDir.push($("textarea")[0]);
 		var allAnswers = [];
@@ -46,9 +46,7 @@
 				}
 			}
 
-		}*/
-
-		$.post( "php/email.php" );
+		}
 
 	});
 

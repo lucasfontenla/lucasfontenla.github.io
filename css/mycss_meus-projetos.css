@@ -9,6 +9,22 @@ nav li a {
   text-transform: uppercase;
 }
 
+img.profile {
+  height: 40%;
+  width: 40%;
+  margin-top: 10%;
+  padding-bottom: 2%;
+}
+
+h4.myName {
+  font-size: 200%;
+  margin-top: 0;
+}
+
+li.getMargin {
+  margin-top: 5%;
+}
+
 /* nav icon mobile */
 #menu_button {
   font-size: 135%;
@@ -28,6 +44,7 @@ nav li a {
     font-size: 175%;
   }
 }
+
 
 /* MAIN */
 /* index content */

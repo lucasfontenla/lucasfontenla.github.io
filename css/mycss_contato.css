@@ -4,6 +4,22 @@ nav li a {
   text-transform: uppercase;
 }
 
+img.profile {
+  height: 40%;
+  width: 40%;
+  margin-top: 10%;
+  padding-bottom: 2%;
+}
+
+h4.myName {
+  font-size: 200%;
+  margin-top: 0;
+}
+
+li.getMargin {
+  margin-top: 5%;
+}
+
 /* nav icon mobile */
 #menu_button {
   font-size: 135%;
@@ -24,6 +40,16 @@ nav a {
 @media only screen and (max-width: 600px) {
   a.brand-logo {
     font-size: 175%;
+  }
+
+  h2.header {
+    font-size: 275%;
+    margin-bottom: 4%;
+  }
+
+  div.section {
+    margin-top: 0;
+    padding-top: 0;
   }
 }
 
@@ -49,6 +75,7 @@ nav a {
 /* divider */
 .divider {
   background-color: #263238;
+  height: 1px;
 }
 
 /* form */

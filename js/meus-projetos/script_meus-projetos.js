@@ -3,6 +3,13 @@
 
   	$('.modal').modal();
   	$('div.card-content p:nth-child(1)').addClass('thin');
+  	$('#row_pessoais p.hvb').removeClass('thin');
+
+  	var iframeHeight = localStorage.getItem('iframe_index');
+
+  	console.log(iframeHeight);
+
+  	$('iframe').css({'height': (iframeHeight + "px")});
 
   	//SIDE NAV
 	$('.button-collapse').sideNav();
@@ -137,7 +144,7 @@
 	}
 
 	//TIMELINE ---------------------------------------------------------------------
-	
+	$("#insertHere").load('index.html');
 
 	//-------------------------------------------------------------------------------
 

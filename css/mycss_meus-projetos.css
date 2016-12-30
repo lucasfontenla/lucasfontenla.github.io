@@ -249,6 +249,20 @@ p.pessoais {
   text-justify: inter-word;
 }
 
+#row_pessoais span.card-title {
+  font-size: 210%;
+  text-transform: capitalize;
+}
+
+#row_pessoais div.card-content p:nth-child(1) {
+  font-size: 110%;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+div.hvb-card.row {
+  height: 50%;
+}
 /*--------------------------   TIMELINE     ----------------------*/
 
 p.timeline {

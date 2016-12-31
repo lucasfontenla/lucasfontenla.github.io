@@ -49,7 +49,7 @@
 		}
 
 		if(allAnswers.length === 4){
-			emailjs.send("gmail","lcfgithubio",{nome: allAnswers[0], sobrenome:allAnswers[1], email:allAnswers[2], mensagem:allAnswers[3]})
+			emailjs.send("gmail","lcfgithubio",{"nome": allAnswers[0], "sobrenome":allAnswers[1], "email":allAnswers[2], "mensagem":allAnswers[3]})
 			.then(function(response) {
 			   console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
 			}, function(err) {

@@ -56,10 +56,12 @@
 			.then(function(response) {
 			   console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
 			   $('div.progress').hide();
-			   alert('Sent!');
+			   Materialize.toast('E-mail enviado com sucesso!', 4000);
+			   CleanAll();
 			}, function(err) {
 			   console.log("FAILED. error=", err);
 			   $('div.progress').hide();
+			   Materialize.toast('Erro no envio!', 4000);
 			});
 		}
 

@@ -74,6 +74,7 @@
 			   console.log("FAILED. error=", err);
 			   $('div.progress').hide();
 			   Materialize.toast('Erro no envio!', 4000);
+				$('button.btn').removeClass('disabled');
 			});
 		}
 

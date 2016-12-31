@@ -73,7 +73,7 @@
 			}, function(err) {
 			   console.log("FAILED. error=", err);
 			   $('div.progress').hide();
-			   Materialize.toast('Erro no envio!', 4000);
+			   Materialize.toast('Erro no envio! Checar a conexão com a internet e recarregar a página', 4000);
 				$('button.btn').removeClass('disabled');
 			});
 		}

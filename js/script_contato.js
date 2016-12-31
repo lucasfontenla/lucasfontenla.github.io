@@ -51,11 +51,15 @@
 		}
 
 		if(allAnswers.length === 4){
+			$('div.progress').show();
 			emailjs.send("gmail","lcfgithubio",{"nome": allAnswers[0], "sobrenome":allAnswers[1], "email":allAnswers[2], "mensagem":allAnswers[3]})
 			.then(function(response) {
 			   console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
+			   $('div.progress').hide();
+			   alert('Sent!');
 			}, function(err) {
 			   console.log("FAILED. error=", err);
+			   $('div.progress').hide();
 			});
 		}
 

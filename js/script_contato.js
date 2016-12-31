@@ -24,11 +24,13 @@
 		var answersDir = $("input");
 		answersDir.push($("textarea")[0]);
 		var allAnswers = [];
+		var classes = [];
 
 		for(var i = 0; i < answersDir.length; i++){
 			dir = answersDir[i];
 			var value = $(dir).val();
 			var inputClass = $(dir).attr('class').split(" ")[0];
+			classes.push(inputClass);
 
 			if(value === ""){
 				$(dir).addClass('invalid');
@@ -50,14 +52,24 @@
 
 		}
 
+		function CleanAll(list){
+			for(var i = 0; i < list.length; i++){
+				$('.'+list[i]).val("");
+				$('.'+list[i]).removeClass('valid');
+				$('label.'+list[i]).removeClass('active');
+			}
+		}
+
 		if(allAnswers.length === 4){
 			$('div.progress').show();
+			$('button.btn').addClass('disabled');
 			emailjs.send("gmail","lcfgithubio",{"nome": allAnswers[0], "sobrenome":allAnswers[1], "email":allAnswers[2], "mensagem":allAnswers[3]})
 			.then(function(response) {
 			   console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
 			   $('div.progress').hide();
 			   Materialize.toast('E-mail enviado com sucesso!', 4000);
-			   CleanAll();
+			   CleanAll(classes);
+				$('button.btn').removeClass('disabled');
 			}, function(err) {
 			   console.log("FAILED. error=", err);
 			   $('div.progress').hide();

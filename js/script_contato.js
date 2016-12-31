@@ -1,6 +1,8 @@
 (function($){
   $(function(){
 
+  	$('div.progress').hide();
+
   	//SIDE NAV
 	$('.button-collapse').sideNav();
 

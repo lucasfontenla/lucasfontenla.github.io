@@ -20,7 +20,6 @@
 	Materialize.updateTextFields();
 
 	$("#button_send").click(function(){
-		
 		var answersDir = $("input");
 		answersDir.push($("textarea")[0]);
 		var allAnswers = [];
@@ -70,6 +69,8 @@
 			   Materialize.toast('E-mail enviado com sucesso!', 4000);
 			   CleanAll(classes);
 				$('button.btn').removeClass('disabled');
+				$('.modal').modal();
+				$('#modal_show_tags').modal('open');
 			}, function(err) {
 			   console.log("FAILED. error=", err);
 			   $('div.progress').hide();

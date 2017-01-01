@@ -130,11 +130,46 @@ div.progress {
   width: 50%;
 }
 
-@media only screen (max-width: 600px){
+@media only screen and (max-width: 600px){
   div.progress {
     margin-left: 1%;
     width: 95%;
   }
+
+  i#icon_social_modal {
+    font-size: 175%;
+    margin-top: 3%;
+  }
+/*
+  i#icon_social_modal:nth-child(1) {
+    margin-left: 12%;
+  }*/
+
+  div.modal-content h4 {
+    font-size: 175%;
+  }
+}
+
+/* MODAL */
+#icon_social_modal {
+  color: #263238;
+  font-size: 275%;
+  padding-right: 6%;
+  padding-top: 3%;
+}
+
+#icon_social_modal:hover {
+  color: #ff5722;
+}
+
+div.icons_socialnet {
+  margin-left: 2%;
+  margin-bottom: 5%;
+}
+
+div.modal-content p {
+  margin: 0;
+  padding-bottom: 0;
 }
 
 /* FOOTER */

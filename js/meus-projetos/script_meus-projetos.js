@@ -89,6 +89,8 @@
 		$('#row_faculdade .chip').hide();
 		$('#row_faculdade .card-content p').addClass('left-align');
 		$('#row_faculdade div.collapsible-header').addClass('left-align');
+
+		$('#row_pessoais .hvb-card span').text('Robótica');
 	}
 	else {
 		$('#row_faculdade .card-action a:nth-child(2)').hide()

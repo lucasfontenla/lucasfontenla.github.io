@@ -18,7 +18,11 @@
       </script>
     </head>
 
-    <body>
+    <body class="#263238 blue-grey darken-4" id="body">
+
+      <script type="text/javascript">
+        document.getElementById("body").style.visibility = "hidden";
+      </script>
 
       <header>
         <div class="navbar-fixed" id="navbar_pin">
@@ -28,7 +32,7 @@
               <a href="index.html" class="brand-logo left blue-grey-text text-darken-4 light">Lucas Fontenla</a>
 
               <ul class="right hide-on-med-and-down">    
-                <li><a href="sobre-mim.html" id="menu" class="blue-grey-text text-darken-4">Sobre Mim</a></li>
+                <li><a href="#" id="menu" class="blue-grey-text text-darken-4 sobre-mim">Sobre Mim</a></li>
                 <li><a id="menu" class="blue-grey-text text-darken-4" href="meus-projetos.html">Meus Projetos</a></li>
                 <li class="active"><a id="menu" class="blue-grey-text text-darken-4" href="contato.html">Contato</a></li>
               </ul>
@@ -37,13 +41,13 @@
                 <li class="center-align"><img src='imgs/profile_picture.jpg' class="circle profile"></li>
                 <li><h4 class="myName thin blue-grey-text text-darken-4 center-align">Lucas Fontenla</h4></li>
                 <li><div class="container"><div class="divider"></div></div></li>
-                <li class="getMargin"><a class="left-align blue-grey-text text-darken-4" href="index.html">Home</a></li>  
-                <li><a class="left-align blue-grey-text text-darken-4" href="sobre-mim.html">Sobre Mim</a></li>
-                <li><a class="left-align blue-grey-text text-darken-4" href="meus-projetos.html">Meus Projetos</a></li>
-                <li class="active"><a class="left-align blue-grey-text text-darken-4" href="contato.html">Contato</a></li>
+                <li class="getMargin"><a class="center-align blue-grey-text text-darken-4" href="index.html">Home</a></li>  
+                <li><a class="center-align blue-grey-text text-darken-4 sobre-mim" href="#">Sobre Mim</a></li>
+                <li><a class="center-align blue-grey-text text-darken-4" href="meus-projetos.html">Meus Projetos</a></li>
+                <li class="active"><a class="center-align blue-grey-text text-darken-4" href="contato.html">Contato</a></li>
               </ul>
 
-              <a href="#" data-activates="slide-out" class="button-collapse" id="menu_button"><i class="material-icons left">menu</i></a>
+              <a href="#" data-activates="slide-out" class="button-collapse right" id="menu_button"><i class="material-icons">menu</i></a>
             </div>        
           </nav>     
         </div>
@@ -153,7 +157,7 @@
 
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
-      <script type="text/javascript" src="js/script_contato.js"></script>
+      <script type="text/javascript" src="js/contato/script_contato.js"></script>
 
     </body>
   </html>

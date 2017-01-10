@@ -1,10 +1,17 @@
 (function($){
   $(function(){
 
+  	document.getElementById("body").style.visibility = "visible";
+	sessionStorage.setItem("goToSobre", false);
+
+  	$("body").hide();
+
+  	$("body").fadeIn(1000);
+
   	$('div.progress').hide();
 
   	//SIDE NAV
-	$('.button-collapse').sideNav();
+	$('.button-collapse').sideNav({edge:'right'});
 
 	//SMALL SCREEN ADAPTOR
 	if (screen.width < 600){
@@ -79,6 +86,12 @@
 			});
 		}
 
+	});
+
+	$("a.sobre-mim").click(function(){
+		$('.button-collapse').sideNav('hide');
+		sessionStorage.setItem("goToSobre", true);
+		window.location.href = "index.html"
 	});
 
   });

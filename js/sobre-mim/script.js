@@ -6,7 +6,7 @@
   	$("footer").hide();
   	$("main").hide();
 
-  	/*$("header, main, footer").fadeIn(2000);/*, function(){
+  	/*$("header, main, footer").fadeIn(1000);, function(){
   		$("body").removeClass("#263238 blue-grey darken-4");
   	});*/
 

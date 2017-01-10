@@ -1,18 +1,21 @@
 (function($){
   $(function(){
 
+  	document.getElementById("body").style.visibility = "visible";
+	sessionStorage.setItem("goToSobre", false);
+
+  	$("body").hide();
+
+  	$("body").fadeIn(1000);
+
+  	//----------------------------------------------------
+
   	$('.modal').modal();
   	$('div.card-content p:nth-child(1)').addClass('thin');
   	$('#row_pessoais p.hvb').removeClass('thin');
 
-  	var iframeHeight = localStorage.getItem('iframe_index');
-
-  	console.log(iframeHeight);
-
-  	$('iframe').css({'height': (iframeHeight + "px")});
-
   	//SIDE NAV
-	$('.button-collapse').sideNav();
+	$('.button-collapse').sideNav({edge:'right'});
 	$(".dropdown-button").dropdown({hover:true});
 	$('ul.tabs').tabs();
 	$('ul.tabs').tabs('select_tab', 'tab_id');
@@ -145,8 +148,12 @@
 		}
 	}
 
-	//TIMELINE ---------------------------------------------------------------------
-	$("#insertHere").load('index.html');
+	//SOBRE MIM ---------------------------------------------------------------------
+	$("a.sobre-mim").click(function(){
+		$('.button-collapse').sideNav('hide');
+		sessionStorage.setItem("goToSobre", true);
+		window.location.href = "index.html"
+	});
 
 	//-------------------------------------------------------------------------------
 

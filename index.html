@@ -4,22 +4,29 @@
       <title>Lucas Fontenla</title>
       <meta charset="utf-8"/>
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-      <link type="text/css" rel="stylesheet" href="css/mycss.css">
+      <link type="text/css" rel="stylesheet" href="css/index/mycss.css">
       <meta name="viewport" content="width=device-width, initial-scale=0.4"/>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link href="css/icons.css" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
-    <body class="">
+    <body class="#263238 blue-grey darken-4" id="body">
+
+    <script type="text/javascript">
+      document.getElementById("body").style.visibility = "hidden";
+    </script>
 
       <header>
         <div class="navbar-fixed" id="navbar_pin">
           <nav class="white z-depth-2" role="navigation">
             <div class="nav-wrapper container">
 
+              <a href="#" data-activates="slide-out" class="button-collapse right" id="menu_button"><i class="material-icons">menu</i></a>
+
               <ul class="right hide-on-med-and-down">    
-                <li><a href="sobre-mim.html" class="blue-grey-text text-darken-4">Sobre Mim</a></li>
+                <li class="home-btn"><a href="#" class="blue-grey-text text-darken-4 home-btn home">Home</a></li>
+                <li class="sobre-mim"><a href="#" class="blue-grey-text text-darken-4 sobre-mim">Sobre Mim</a></li>
                 <li><a class="blue-grey-text text-darken-4" href="meus-projetos.html">Meus Projetos</a></li>
                 <li><a class="blue-grey-text text-darken-4" href="contato.html">Contato</a></li>
               </ul>
@@ -28,13 +35,11 @@
                 <li><img src='imgs/profile_picture.jpg' class="circle center-align profile"></li>
                 <li><h4 class="myName thin blue-grey-text text-darken-4 center-align">Lucas Fontenla</h4></li>
                 <li><div class="container"><div class="divider"></div></div></li>
-                <li class="active getMargin"><a class="left-align blue-grey-text text-darken-4" href="index.html">Home</a></li>  
-                <li><a class="left-align blue-grey-text text-darken-4" href="sobre-mim.html">Sobre Mim</a></li>
-                <li><a class="left-align blue-grey-text text-darken-4" href="meus-projetos.html">Meus Projetos</a></li>
-                <li><a class="left-align blue-grey-text text-darken-4" href="contato.html">Contato</a></li>
+                <li class="active getMargin home"><a class="center-align blue-grey-text text-darken-4 home" href="#">Home</a></li>  
+                <li class="sobre-mim"><a class="center-align blue-grey-text text-darken-4 sobre-mim" href="#">Sobre Mim</a></li>
+                <li><a class="center-align blue-grey-text text-darken-4" href="meus-projetos.html">Meus Projetos</a></li>
+                <li><a class="center-align blue-grey-text text-darken-4" href="contato.html">Contato</a></li>
               </ul>
-
-              <a href="#" data-activates="slide-out" class="button-collapse" id="menu_button"><i class="material-icons left">menu</i></a>
             </div>        
           </nav>     
         </div>
@@ -44,7 +49,7 @@
       </header>
 
       <main class="#263238 blue-grey darken-4">
-        <div class="row">
+        <div class="row home">
           <div class="valign-wrapper">
 
             <div class="col s12 m12 l4 offset-l2 hide-on-small-only" id="col_ppicture">
@@ -66,13 +71,13 @@
         </div> 
 
         <!--Mobile Only-->
-        <div class="row">
+        <div class="row home">
           <div class="col s2 m12 l12 push-s3 center-align hide-on-med-and-up" id="col_ppicture_mobile">
                 <img class="responsive-image circle z-depth-3" src="imgs/profile_picture.jpg" id="profile_picture">
           </div>
         </div>
 
-        <div class="row">
+        <div class="row home">
           <div class="col s12 m12 l12 hide-on-med-and-up" id="col_name_mobile">
             <div class="row">
               <div class="col s12 m12 l12">
@@ -82,6 +87,33 @@
               <div class="col s12 m12 l12">
                 <p class="white-text light left-align center-align">Aqui eu vou escrever um pouco sobre mim, alguma coisa que chame atenção</p>                  
               </div>              
+            </div>
+          </div>
+        </div>
+
+        <!-- Sobre Mim -->
+        <div class="row sobre">
+          <div class="container">
+            <div class="col s12 m12 l12">
+              <div class="section">
+                <h1 class="thin white-text header">Lucas Fontenla</h1>
+              </div>
+              <div class="divider"></div>
+              <div class="section white-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>                
+              </div>
             </div>
           </div>
         </div>
@@ -104,9 +136,8 @@
         </div>
       </footer>
 
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
-      <script type="text/javascript" src="js/script.js"></script>
-
+      <script type="text/javascript" src="js/index/script.js"></script>
     </body>
   </html>

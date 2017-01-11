@@ -122,7 +122,9 @@
 			localStorage.setItem("Hand", 'right');
 		}
 
-		window.setTimeout('location.reload()', 1);
+		window.setTimeout(function(){
+			$('body').fadeOut(150, function(){location.reload()});
+		}, 250);
 	});
 
 

@@ -184,9 +184,25 @@
 		else {
 			localStorage.setItem("Hand", 'right');
 		}
-
-		window.setTimeout('location.reload()', 1);
+		
+		window.setTimeout(function(){
+			$('body').fadeOut(150, function(){location.reload()});
+		}, 250);
 	});
+
+	//---------------------------------------------------------------------------------
+	if(screen.width < 600){
+		var windowWidth = window.innerWidth;
+		var tabsWidth = 0;
+		var classes = ["a.top-tab", "a.pessoais-tab", "a.faculdade-tab"];
+
+		for(var i = 0; i < classes.length; i++){
+			tabsWidth = $(classes[i]).outerWidth() + tabsWidth;
+		}
+
+		var margin = ((windowWidth - tabsWidth)/2)*1.2;
+		$("ul.tabs div.container").css({"margin-left":(String(margin)+"px")});
+	}
 
   });
 })(jQuery);

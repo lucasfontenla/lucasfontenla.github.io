@@ -60,7 +60,7 @@
 			var toAppendModal2 = "";
 
 			for(var i = 0; i < tags_chips.length; i++){
-				var addNow = `<div class="chip ` + tagsGot[(i+1)] + `">` + tags_chips[i] + `</div>`;
+				var addNow = `<div class="chip left-align ` + tagsGot[(i+1)] + `">` + tags_chips[i] + `</div>`;
 				toAppendModal2 += addNow;
 			}
 

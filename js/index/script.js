@@ -91,7 +91,6 @@
 
 	$("div.nav-extra").css({"margin-top":(String(addMarginNavExtra)+"px")});
 
-	localStorage = null;
 	var Hand = localStorage.getItem("Hand");
 	if((Hand == null) || (Hand == 'right')){
 		$('.button-collapse').sideNav({edge:'right'});

@@ -169,11 +169,13 @@
 		$('.button-collapse').sideNav({edge:'right'});
 		$("input.switch").prop('checked', false);	
 		$('a.button-collapse').removeClass('left').addClass('right');
+		$('a.modal-close').removeClass('left').addClass('right');
 	}
 	else if(Hand == 'left'){
 		$('.button-collapse').sideNav({edge:'left'});
 		$("input.switch").prop('checked', true);
 		$('a.button-collapse').removeClass('right').addClass('left');
+		$('a.modal-close').removeClass('right').addClass('left')
 	}
 
 	$("input.switch").click(function(){

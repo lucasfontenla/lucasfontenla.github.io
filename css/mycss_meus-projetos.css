@@ -185,7 +185,6 @@ p.faculdade {
 }
 
 div.input-field {
-  padding-left: 25%;
   margin-top: -1.5%;
   margin-bottom: 4%;
 }
@@ -195,6 +194,7 @@ div.col.s3.m3.l3 {
 }
 
 input#autocomplete-input.autocomplete {
+  margin: 0;
   margin-left: 2%;
 }
 

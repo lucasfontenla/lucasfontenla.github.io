@@ -104,11 +104,13 @@
 		$('.button-collapse').sideNav({edge:'right'});
 		$("input.switch").prop('checked', false);	
 		$('a.button-collapse').removeClass('left').addClass('right');
+		$('button#button_send').removeClass('left').addClass('right');
 	}
 	else if(Hand == 'left'){
 		$('.button-collapse').sideNav({edge:'left'});
 		$("input.switch").prop('checked', true);
 		$('a.button-collapse').removeClass('right').addClass('left');
+		$('button#button_send').removeClass('right').addClass('left');
 	}
 
 	$("input.switch").click(function(){

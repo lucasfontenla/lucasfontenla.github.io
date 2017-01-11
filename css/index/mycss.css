@@ -132,3 +132,15 @@ footer h5 {
   padding-right: 7.5%;
   }
 }
+
+/*PARA CANHOTOS MODO*/
+div.nav-extra {
+  margin-top: 15%;
+}
+
+div.nav-extra p {
+  font-size: 90%;
+  margin: 0;
+  padding: 0;
+  height: 30px;
+}

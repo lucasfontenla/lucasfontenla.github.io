@@ -86,5 +86,12 @@
 		}
 	});
 
+	var NavMainHeight = $("div.nav-main").height();
+	var windowHeight = window.innerHeight;
+	var NavExtraHeight = $("div.nav-extra").height();
+
+	var addMarginNavExtra = windowHeight - NavExtraHeight - NavMainHeight - 20;
+
+	$("div.nav-extra").css({"margin-top":(String(addMarginNavExtra)+"px")});
   });
 })(jQuery);

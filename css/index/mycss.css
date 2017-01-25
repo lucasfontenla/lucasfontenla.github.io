@@ -1,7 +1,11 @@
 /* NAV */
 /* nav text */
-nav li a {
+nav li a:not(.drop) {
   text-transform: uppercase;
+}
+
+ul.dropdown-content {
+  min-width: 160px;
 }
 
 img.profile {
@@ -133,14 +137,7 @@ footer h5 {
   }
 }
 
-/*PARA CANHOTOS MODO*/
-div.nav-extra {
-  margin-top: 15%;
-}
-
-div.nav-extra p {
-  font-size: 90%;
-  margin: 0;
-  padding: 0;
-  height: 30px;
+/* SOBRE MIM */
+h1.header {
+  margin-top: 100px;
 }

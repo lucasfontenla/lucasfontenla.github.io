@@ -1,7 +1,11 @@
 /* NAV */
 /* nav text */
-nav li a {
+nav li a:not(.drop) {
   text-transform: uppercase;
+}
+
+ul.dropdown-content {
+  min-width: 160px;
 }
 
 img.profile {

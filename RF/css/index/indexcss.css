@@ -12,7 +12,7 @@ div.first nav {
 }
 
 div.second nav {
-	background-image: linear-gradient(#263238, #263238);
+	background-image: linear-gradient(#b71c1c, #b71c1c);
 }
 
 img.logo {
@@ -47,9 +47,61 @@ i.business {
 	font-size: 275%;
 }
 
+mark {
+	background-color: white;
+	color: #263238;
+	padding-right: .3%;
+	padding-left: .3%;
+}
+
+p {
+	font-size: 115%;
+}
+
+div.row.sobre-first {
+	margin-top: 3.5%;
+}
+
+div.row.sobre-second {
+	margin-top: 2%;
+}
+
+div#atuacao img {
+	height: 25%;
+	width: 25%;
+	margin-left: 38%;
+}
+
+div#atuacao h5 {
+	font-size: 135%;
+	text-transform: capitalize;
+}
+
+div#atuacao mark {
+	background-color: #263238;
+	color: white;
+	padding-right: 1.5%;
+	padding-left: 1.5%;
+}
+
+div#atuacao p {
+	font-size: 90%;
+}
+
+div#atuacao div.col {
+	margin-top: 4%;
+}
+
+div#atuacao p mark {
+	color: #263238;
+	background-color: white;
+	padding-right: 1.5%;
+	padding-left: 1.5%;
+}
+
 @media only screen and (max-width: 600px){
 	.parallax-container {
-		height: 550px;
+		height: 450px;
 	}
 
 	div.parallax-container img {
@@ -69,9 +121,3 @@ i.business {
 	}
 }
 
-mark {
-	background-color: white;
-	color: #263238;
-	padding-right: .3%;
-	padding-left: .3%;
-}

@@ -1,6 +1,7 @@
 (function($){
   $(function(){
   	$("div.second").hide();
+  	$(".button-collapse").sideNav();
 
   	$(document).ready(function(){
       $('.parallax').parallax();
@@ -13,7 +14,7 @@
     	var scrollLimit = 400;
     }
     else {
-    	var scrollLimit = 600;
+    	var scrollLimit = 500;
     }
 
     $(window).on('scroll', function(){
@@ -22,20 +23,31 @@
 		if(scrollPos > scrollLimit){
 			$('div.first').fadeOut(150, function(){
 				$('div.second').fadeIn(150);
-				$("nav").css({"background-image":"linear-gradient(#263238, #263238)"});
 			});
 		}
 
 		else if(scrollPos <= scrollLimit){
 			$('div.second').fadeOut(150, function(){
 				$('div.first').fadeIn(150);
-				if(screen.width > 600){
-					$("nav").css({"background-image":"linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,.5), rgba(0,0,0,.2))"});
-				}
-				else {
-					$("nav").css({"background-image":"linear-gradient(to right, rgba(0,0,0,.3), rgba(0,0,0,.75), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0))"});
-				}		
 			});
+		}
+
+		if(screen.width > 600){
+			if(scrollPos > 600){
+				$("nav ul li:nth-child(1)").addClass("active");
+				$("nav ul li:nth-child(2)").removeClass("active");
+				$("nav ul li:nth-child(3)").removeClass("active");
+			}
+			if(scrollPos > 700){
+				$("nav ul li:nth-child(2)").addClass("active");
+				$("nav ul li:nth-child(1)").removeClass("active");
+				$("nav ul li:nth-child(3)").removeClass("active");
+			}
+			if(scrollPos > 800){
+				$("nav ul li:nth-child(3)").addClass("active");
+				$("nav ul li:nth-child(1)").removeClass("active");
+				$("nav ul li:nth-child(2)").removeClass("active");
+			}
 		}
 	});
 
@@ -43,7 +55,7 @@
 	var imageHeight = $("div.parallax-container.index").height();
 	var firstSectionHeight = screenHeight - imageHeight;
 
-	$("div.section.first").css({"height":(String(firstSectionHeight)+"px")});
+	$("div.section.first-section").css({"height":(String(firstSectionHeight)+"px")});
 
 	if(screen.width < 600){
 		var IconsMargin = (screen.width - $("i.business").width())/2;
@@ -51,7 +63,13 @@
 	}
 
 	$("a.sobreClick").click(function(){
-		$("body").scrollTo("#sobre");
+		if(screen.width < 600){
+			$('.button-collapse').sideNav('hide');
+		}
+		
+		$('html, body').animate({
+	        scrollTop: $("#sobre").offset().top-140
+	    }, 1000);
 	});
 
   });

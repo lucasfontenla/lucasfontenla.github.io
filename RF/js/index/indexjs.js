@@ -13,7 +13,7 @@
     	var scrollLimit = 400;
     }
     else {
-    	var scrollLimit = 500;
+    	var scrollLimit = 600;
     }
 
     $(window).on('scroll', function(){
@@ -44,6 +44,15 @@
 	var firstSectionHeight = screenHeight - imageHeight;
 
 	$("div.section.first").css({"height":(String(firstSectionHeight)+"px")});
+
+	if(screen.width < 600){
+		var IconsMargin = (screen.width - $("i.business").width())/2;
+		$("i.business").css({"margin-left":(String(IconsMargin-25)+"px")});
+	}
+
+	$("a.sobreClick").click(function(){
+		$("body").scrollTo("#sobre");
+	});
 
   });
 })(jQuery);

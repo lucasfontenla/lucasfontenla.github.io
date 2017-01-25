@@ -63,4 +63,15 @@ i.business {
 	div.row.container {
 		margin-top: 5%;
 	}
+
+	i.business {
+		margin: 0;
+	}
+}
+
+mark {
+	background-color: white;
+	color: #263238;
+	padding-right: .3%;
+	padding-left: .3%;
 }

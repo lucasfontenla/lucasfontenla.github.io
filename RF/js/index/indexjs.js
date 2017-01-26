@@ -119,5 +119,15 @@
 	    }, 600);
 	});
 
+	$(".brand-logo, img.logo").click(function(){
+		if(screen.width < 600){
+			$('.button-collapse').sideNav('hide');
+		}
+		
+		$('html, body').animate({
+	        scrollTop: 0
+	    }, 600);
+	});
+
   });
 })(jQuery);

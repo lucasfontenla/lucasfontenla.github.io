@@ -1,24 +1,35 @@
 <!DOCTYPE html>
   <html>
     <head>
-      <title>Site</title>
+      <title>RF EXIMPORT</title>
       <meta charset="utf-8"/>
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
       <link type="text/css" rel="stylesheet" href="css/index/indexcss.css">
       <meta name="viewport" content="width=device-width, initial-scale=0.4"/>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link href="css/icons.css" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed" rel="stylesheet">
+      <link rel="shortcut icon" type="image/png" href="imgs/Logo.png"/>
     </head>
 
     <body>
 <!--NAV-->
       <!--first-->
       <ul id="nav-mobile" class="side-nav">
-        <li><a class="sobreClick" href="#!">Sobre</a></li>
-        <li><a href="#">Atuação</a></li>
-        <li><a href="#">Contato</a></li>
+        <li><div class="row">
+          <div class="container">
+            <div class="col s2">
+              <img class="sideNav" src="imgs/Logo.png">
+            </div>
+            <div class="col s10">
+              <h2>RF EXIMPORT</h2>
+            </div>
+          </div>
+        </div></li>
+        <li><div class="container"><div class="divider"></div></div></li>
+        <li><a class="center sobreClick" href="#!">Sobre</a></li>
+        <li><a class="center atuacaoClick" href="#!">Atuação</a></li>
+        <li><a class="center contatoClick" href="#!">Contato</a></li>
       </ul>
 
       <div class="navbar-fixed first">
@@ -27,8 +38,8 @@
             
             <ul class="right hide-on-med-and-down">
               <li><a class="sobreClick" href="#!">Sobre</a></li>
-              <li><a href="#">Atuação</a></li>
-              <li><a href="#">Contato</a></li>
+              <li><a class="atuacaoClick" href="#!">Atuação</a></li>
+              <li><a class="contatoClick" href="#!">Contato</a></li>
             </ul>
 
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -38,7 +49,7 @@
 
       <!--second-->
       <div class="navbar-fixed second">
-        <nav class="transparent z-depth-0" role="navigation">
+        <nav class="transparent z-depth-3" role="navigation">
           <div class="nav-wrapper container">
 
             <img class="logo" src="imgs/Logo.png">
@@ -46,8 +57,8 @@
             
             <ul class="right hide-on-med-and-down">
               <li><a class="sobreClick" href="#!">Sobre</a></li>
-              <li><a href="#">Atuação</a></li>
-              <li><a href="#">Contato</a></li>
+              <li><a class="atuacaoClick" href="#!">Atuação</a></li>
+              <li><a class="contatoClick" href="#!">Contato</a></li>
             </ul>
 
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -60,14 +71,14 @@
         <div class="parallax"><img src="imgs/port.jpg"></div>
       </div>
 
-      <div class="section white first-section">
+      <div class="section white first-section z-depth-4">
         <div class="row container">
           <h2 class="header">RF EXIMPORT</h2>
           <h5><mark>O Mundo dos negócios mais próximo!</mark></h5>
         </div>
       </div>
 
-      <div id="sobre" class="section #263238 blue-grey darken-4">
+      <div id="sobre" class="section #263238 blue-grey darken-4 z-depth-4">
         <div class="row container">
           <h3 class="header white-text">SOBRE</h3>
           <div class="row sobre-first">
@@ -85,61 +96,105 @@
         </div>
       </div>
 
-      <div class="parallax-container index">
+      <div class="parallax-container secondary">
         <div class="parallax"><img src="imgs/city.jpg"></div>
       </div>
 
-      <div id="atuacao" class="section #b71c1c red darken-4">
+      <div id="atuacao" class="section #b71c1c red darken-4 z-depth-4">
         <div class="row container">
           <h3 class="header white-text">ATUAÇÃO</h3>
+          <div class="row">
+            <div class="col s12 m6 l4">
+              <img class="circle z-depth-3" src="imgs/food-industry.jpg">
+              <h5 class="white-text center"><mark class="z-depth-3">Produtos alimentícios</mark></h5>
+              <div class="container">
+                <p class="white-text center">-<mark>Tipicamente brasileiros</mark> (Tradicionais e Organicos) = Frutas e Sucos Tropicais, Pao de Queijo, Acai,
+                Cafe, Carnes, Naturais entre outros.</p>
+                <p class="white-text center">-<mark>Frutas e vinhos da America Latina,</mark> como Chile, Argentina e Uruguay e da Europa como Espanha, Portugal e Italia.</p>
+              </div>
+            </div>
 
-          <div class="col s12 m6 l4">
-            <img class="circle" src="imgs/food-industry.jpg">
-            <h5 class="white-text center"><mark>Produtos alimentícios</mark></h5>
-            <div class="container">
-              <p class="white-text center">-<mark>Tipicamente brasileiros</mark> (Tradicionais e Organicos) = Frutas e Sucos Tropicais, Pao de Queijo, Acai,
-              Cafe, Carnes, Naturais entre outros.</p>
-              <p class="white-text center">-<mark>Frutas e vinhos da America Latina,</mark> como Chile, Argentina e Uruguay e da Europa como Espanha, Portugal e Italia.</p>
+            <div class="col s12 m6 l4">
+              <img class="circle z-depth-3" src="imgs/ethanol.jpg">
+              <h5 class="white-text center"><mark class="z-depth-3">Commodities</mark></h5>
+              <div class="container">
+                <p class="white-text center">Açúcar/Etanol Brasileiros</p>
+              </div>
+            </div>
+
+            <div class="col s12 m12 l4">
+              <img class="circle z-depth-3" src="imgs/mining.jpg">
+              <h5 class="white-text center"><mark class="z-depth-3">Mineração</mark></h5>
+              <div class="container">
+                <p class="white-text center">-<mark>Manganês e Ouro,</mark> tendo participação nas empresas <mark>MINERAX e PROSPEX.</mark></p>
+              </div>
             </div>
           </div>
 
-          <div class="col s12 m6 l4">
-            <img class="circle" src="imgs/food-industry.jpg">
-            <h5 class="white-text center"><mark>Commodities</mark></h5>
-            <div class="container">
-              <p class="white-text center">Açúcar/Etanol Brasileiros</p>
+          <div class="row">
+            <div class="col s12 m6 l4 offset-l2">
+              <img class="circle z-depth-3" src="imgs/shield.jpg">
+              <h5 class="white-text center"><mark class="z-depth-3">Segurança Privada e Pública</mark></h5>
+              <div class="container">
+                <p class="white-text center">Equipamentos pessoais e eletrônicos, veículos e acessórios para a <mark>área civil e militar</mark> e principalmente no setor de <mark>blindagem veicular</mark> atuando indiretamente com blindadoras de São Paulo.</p>
+                <p class="white-text center">Desenvolvimento de <mark>novas tecnologias</mark> com parcerias internacionais.</p>
+              </div>
+            </div>
+
+            <div class="col s12 m6 l4">
+              <img class="circle z-depth-3" src="imgs/business.jpg">
+              <h5 class="white-text center"><mark class="z-depth-3">Intermediação de negócios</mark></h5>
+              <div class="container">
+                <p class="white-text center">Em conjunto com <mark>Fundos de Investimentos</mark>, Bancos e Agentes Internacionais atuamos na <mark>negociação de sociedades e empresas</mark> como Usinas de Açúcar e Etanol, Frigoríficos, Ativos Minerais entre outros.</p>
+              </div>
             </div>
           </div>
-
-          <div class="col s12 m6 l4">
-            <img class="circle" src="imgs/food-industry.jpg">
-            <h5 class="white-text center"><mark>Mineração</mark></h5>
-            <div class="container">
-              <p class="white-text center">-<mark>Manganês e Ouro,</mark> tendo participação nas empresas <mark>MINERAX e PROSPEX.</mark></p>
-            </div>
-          </div>
-
-          <div class="col s12 m6 l4 pull-l2">
-            <img class="circle" src="imgs/food-industry.jpg">
-            <h5 class="white-text center"><mark>Segurança Privada e Pública</mark></h5>
-            <div class="container">
-              <p class="white-text center">Equipamentos pessoais e eletrônicos, veículos e acessórios para a <mark>área civil e militar</mark> e principalmente no setor de <mark>blindagem veicular</mark> atuando indiretamente com blindadoras de S.Paulo.</p>
-              <p class="white-text center">Desenvolvimento de <mark>novas tecnologias</mark> com parcerias internacionais.</p>
-            </div>
-          </div>
-
-          <div class="col s12 m6 l4">
-            <img class="circle" src="imgs/food-industry.jpg">
-            <h5 class="white-text center"><mark>Intermediação de negócios</mark></h5>
-            <div class="container">
-              <p class="white-text center">Em conjunto com <mark>Fundos de Investimentos</mark>, Bancos e Agentes Internacionais atuamos na <mark>negociação de sociedades e empresas</mark> como Usinas de Açúcar e Etanol, Frigoríficos, Ativos Minerais entre outros.</p>
-            </div>
-          </div>
-
         </div>
       </div>
 
-      <footer>
+      <div id="contato" class="section #263238 blue-grey darken-4">
+        <div class="row container">
+          <h3 class="header white-text">CONTATO</h3>
+          <p class="white-text">Envie-nos um e-mail ou nos telefone.
+          <div class="row contacts">
+            <div class="col s1 m2 l1"><i class="material-icons white-text mail">email</i></div>
+            <div class="col s10 m10 l10">
+              <p class="left-align white-text"><a href="mailto:rfeximport@yahoo.com.br?Subject=Contato%20pelo%20Site" target="_top">rfeximport@yahoo.com</a></p>
+            </div>
+          </div>
+          <div class="row contacts">
+            <div class="col s1 m2 l1"><i class="material-icons white-text telephone">telephone</i></div>
+            <div class="col s10 m10 l10">
+              <p class="left-align white-text"><a href="tel:+55 11 997990829">+55 11 99799-0829</a></mark></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="page-footer white">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="blue-grey-text text-darken-4">RF EXIMPORT</h5>
+              <p class="grey-text text-lighten-4"><mark>O mundo dos negócios mais próximo!</mark></p>
+            </div>
+            <div class="col l4 offset-l2 s12 news">
+              <h5 class="blue-grey-text text-darken-4">Notícias</h5>
+              <ul>
+                <li><a class="grey-text text-darken-4" href="#!">Link 1</a></li>
+                <li><a class="grey-text text-darken-4" href="#!">Link 2</a></li>
+                <li><a class="grey-text text-darken-4" href="#!">Link 3</a></li>
+                <li><a class="grey-text text-darken-4" href="#!">Link 4</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright #b71c1c red darken-4">
+          <div class="container">
+          © 2017 Lucas Fontenla
+          <a class="blue-grey-text text-lighten-4 right" href="https://lucasfontenla.github.io/" target="_blank">lucasfontenla.github.io</a>
+          </div>
+        </div>
       </footer>
 
       <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>

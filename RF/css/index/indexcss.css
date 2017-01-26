@@ -2,6 +2,20 @@ html {
 	font-family: 'Fira Sans Condensed', sans-serif;
 }
 
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+footer.page-footer {
+	margin-top: 0;
+}
+
 div.navbar-fixed li a {
 	text-transform: uppercase;
 	font-size: 19px;
@@ -85,11 +99,11 @@ div#atuacao mark {
 }
 
 div#atuacao p {
-	font-size: 90%;
+	font-size: 105%;
 }
 
 div#atuacao div.col {
-	margin-top: 4%;
+	margin-top: 2%;
 }
 
 div#atuacao p mark {
@@ -97,6 +111,22 @@ div#atuacao p mark {
 	background-color: white;
 	padding-right: 1.5%;
 	padding-left: 1.5%;
+}
+
+.parallax-container.secondary {
+	height: 400px;
+}
+
+i.telephone {
+	margin-top: 10%;
+	margin-left: -220%;
+	font-size: 275%;
+}
+
+i.mail {
+	margin-top: 15%;
+	margin-left: 20%;
+	font-size: 275%;
 }
 
 @media only screen and (max-width: 600px){
@@ -112,6 +142,40 @@ div#atuacao p mark {
 		background-image: linear-gradient(to right, rgba(0,0,0,.3), rgba(0,0,0,.75), rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0));
 	}
 
+	img.sideNav { 
+		height: 110%;
+		width: 110%;
+		margin-top: 105%;
+		margin-left: 170%;
+	}
+
+	ul#nav-mobile h2 {
+		font-size: 180%;
+		margin-left: 15%;
+	}
+
+	ul#nav-mobile div.row {
+		margin-top: 10%;
+	}
+
+	ul#nav-mobile .sobreClick {
+		margin-top: 5%;
+	}
+
+	ul#nav-mobile a {
+		text-transform: uppercase;
+		font-size: 115%;
+	}
+
+	div.second img.logo {
+		margin-top: 4%;
+		margin-left: 1.5%;
+	}
+
+	div.second a.brand-logo {
+		margin-left: 7%;
+	}
+
 	div.row.container {
 		margin-top: 5%;
 	}
@@ -119,5 +183,54 @@ div#atuacao p mark {
 	i.business {
 		margin: 0;
 	}
+
+	div.first-section h2 {
+		font-size: 350%;
+	}
+
+	div.first-section h5 {
+		font-size: 150%;
+	}
+
+	div.parallax-container.secondary {
+		height: 300px;
+	}
+
+	div.contacts p {
+		margin-left: 4.5%;
+		font-size: 120%;
+	}
+
+	div#contato i {
+		font-size: 175%;
+	}
+
+	div#contato i.mail {
+		margin-top: 200%;
+	}
+
+	div#contato i.telephone {
+		margin-top: 200%;
+		margin-left: -1200%;
+	}
+
 }
 
+@media only screen and (max-height: 600px){
+	.parallax-container {
+		height: 380px;
+	}
+
+	div.first-section h5 {
+		font-size: 125%;
+	}
+
+	div.second img.logo {
+		margin-top: 4%;
+		margin-left: 0%;
+	}
+
+	div.second a.brand-logo {
+		margin-left: 10%;
+	}
+}

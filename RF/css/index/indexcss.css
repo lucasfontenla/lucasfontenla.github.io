@@ -91,6 +91,10 @@ div.row.sobre-second {
 	margin-top: 2%;
 }
 
+div.row.sobre-third p {
+	margin-top: 3s%;
+}
+
 div#atuacao img {
 	height: 25%;
 	width: 25%;
@@ -227,7 +231,7 @@ a#prev {
 	}
 
 	i.business {
-		margin: 0;
+		margin-top: 0;
 	}
 
 	img.profile-picture {
@@ -266,7 +270,6 @@ a#prev {
 		margin-top: 200%;
 		margin-left: -1200%;
 	}
-
 }
 
 @media only screen and (max-height: 600px){

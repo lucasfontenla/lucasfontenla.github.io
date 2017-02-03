@@ -1,12 +1,13 @@
 (function($){
   $(function(){
   	$(window).scrollTop(0);
-  	$("div.second, a#paused").hide();
+  	$("div.second, i.play-icon").hide();
   	$(".button-collapse").sideNav();
   	$(".dropdown-button").dropdown({hover:true, constrainWidth:false});
     $('.carousel').carousel({dist:-15, noWrap:true});
     $('.materialboxed').materialbox();
-    $('.slider').slider({height:550, indicators:false, interval:5000});
+    $('.slider').slider({height:450, indicators:false, interval:5000});
+    $('.modal').modal();
 
   	//LANGUAGE CHOOSE
   	$(".esp, .eng").hide();
@@ -186,18 +187,27 @@
 		$('.slider').slider('next');
 	});
 
-	var once = false;
+	var playing = true;
 
-	$("ul.slides img").hover(function(){
-		$('.slider').slider('pause');
-		if(!once){
-			$('a#paused').fadeIn();
-			once = true;
+	$("a#paused").click(function(){
+		if(playing){
+			$("i.pause-icon").hide();
+			$("i.play-icon").show()
+			$("a#paused").prop('id', 'playing');
+			$(".slider").slider('pause');
+			playing = false;
 		}
-	}, function(){
-		$('.slider').slider('start');
-		$('a#paused').fadeOut(300);
-		once = false;
+		else {
+			$("i.pause-icon").show();
+			$("i.play-icon").hide()
+			$("a#playing").prop('id', 'paused');
+			$(".slider").slider('start');
+			playing = true;
+		}
+	});
+
+	$("a#parceiros-modal").click(function(){
+		$('#modal1').modal('open');
 	});
 
   });

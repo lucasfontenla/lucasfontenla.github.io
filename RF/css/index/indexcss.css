@@ -61,6 +61,17 @@ i.business {
 	font-size: 275%;
 }
 
+img.profile-picture {
+	height: 80%;
+	width: 80%;
+	margin-top: 40%;
+	margin-left: 10%;
+}
+
+div.carousel {
+	margin-top: 0;
+}
+
 mark {
 	background-color: white;
 	color: #263238;
@@ -115,6 +126,7 @@ div#atuacao p mark {
 
 .parallax-container.secondary {
 	height: 400px;
+	margin-top: 150%;
 }
 
 i.telephone {
@@ -131,6 +143,32 @@ i.mail {
 
 img.logo:hover {
 	cursor: pointer;
+}
+
+ul#languageDropdown {
+	min-width: 155px;
+}
+
+ul#languageDropdown img {
+	height: 15%;
+	width: 15%;
+	margin-right: 5%;
+}
+
+ul#languageDropdown a {
+	font-size: 110%;
+}
+
+a.btn-floating {
+	margin-top: 250px;
+}
+
+a.btn-floating.btn-small {
+	margin-top: 30%;
+}
+
+a#prev {
+	transform: rotate(180deg);
 }
 
 @media only screen and (max-width: 600px){
@@ -190,6 +228,13 @@ img.logo:hover {
 
 	i.business {
 		margin: 0;
+	}
+
+	img.profile-picture {
+		margin-top: 0;
+		height: 40%;
+		width: 40%;
+		margin-left: 28%;
 	}
 
 	div.first-section h2 {

@@ -30,6 +30,13 @@
         <li><a class="center sobreClick" href="#!sobre">Sobre</a></li>
         <li><a class="center atuacaoClick" href="#!atuacao">Atuação</a></li>
         <li><a class="center contatoClick" href="#!contato">Contato</a></li>
+        <li><a class="center languageChange" href="#!">Language</a></li>        
+      </ul>
+
+      <ul id='languageDropdown' class='dropdown-content' data-constrainwidth="falses">
+        <li class="engChoose"><a href="#!"><img class="flag" src="imgs/flags/united-kingdom.png">English</a></li>
+        <li class="espChoose"><a href="#!"><img class="flag" src="imgs/flags/spain.png">Español</a></li>
+        <li class="portChoose"><a class="portChoose" href="#!"><img class="flag" src="imgs/flags/brazil.png">Português</a></li>
       </ul>
 
       <div class="navbar-fixed first">
@@ -37,9 +44,19 @@
           <div class="nav-wrapper container">
             
             <ul class="right hide-on-med-and-down">
-              <li><a class="sobreClick" href="#!sobre">Sobre</a></li>
-              <li><a class="atuacaoClick" href="#!atuacao">Atuação</a></li>
-              <li><a class="contatoClick" href="#!contato">Contato</a></li>
+              <li><a class="pt sobreClick" href="#!sobre">Sobre</a></li>
+              <li><a class="esp sobreClick" href="#!sobre">Sobre</a></li>
+              <li><a class="eng sobreClick" href="#!sobre">About</a></li>
+
+              <li><a class="pt atuacaoClick" href="#!atuacao">Atuação</a></li>
+              <li><a class="esp atuacaoClick" href="#!atuacao">Atuación</a></li>
+              <li><a class="eng atuacaoClick" href="#!atuacao">Acting</a></li>
+
+              <li><a class="pt contatoClick" href="#!contato">Contato</a></li>
+              <li><a class="esp contatoClick" href="#!contato">Contato</a></li>
+              <li><a class="eng contatoClick" href="#!contato">Contact</sa></li>
+
+              <li><a class="languageChange dropdown-button" href="#!" data-activates="languageDropdown"><i class="material-icons">language</i></a></li>
             </ul>
 
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -84,13 +101,103 @@
           <div class="row sobre-first">
             <div class="col s12 m2 l1"><i class="material-icons white-text business">business</i></div>
             <div class="col s12 m10 l10 sobre-txt">
-              <p class="left-align white-text">RF EXIMPORT, Empresa de sociedade espanhola, vem desde 1985 atuando em <mark>comércio Internacional</mark> em segmentos primordiais como <mark>alimentos, commodities, mineração e segurança,</mark> além da intermediação de negócios.</p>
+              <p class="left-align white-text">RF EXIMPORT, Empresa de sociedade espanhola, vem desde 1985 atuando em comércio Internacional em segmentos primordiais como alimentos, commodities, mineração e segurança, além da intermediação de negócios.</p>
             </div>
           </div>
           <div class="row sobre-second">
-            <div class="col s12 m2 l1"><i class="material-icons white-text business">assignment_ind</i></div>
+            <div class="col s12 m2 l1"><img class="circle profile-picture" src="imgs/carousel/profile-picture.jpg"></div>
             <div class="col s12 m10 l10 sobre-txt">
-              <p class="left-align white-text">Seu sócio-fundador, administrador de empresas JOSÉ MANOEL "MANOLO" EIRAS FONTENLA, radicado desde 1957 no Brasil e com <mark>parceiros estratégicos em diversos países de todos os continentes</mark>, atua diretamente nas negociações e busca de <mark>oportunidades mundiais.</mark></p>
+              <p class="left-align white-text">Seu sócio-fundador, administrador de empresas JOSÉ MANOEL "MANOLO" EIRAS FONTENLA, radicado desde 1957 no Brasil e com parceiros estratégicos em diversos países de todos os continentes, atua diretamente nas negociações e busca de oportunidades mundiais.</p>
+            </div>
+          </div>
+          <!--
+          <div class="carousel">
+            <a class="carousel-item" href="#one!"><img src="imgs/carousel/carousel1.jpg"></a>
+            <a class="carousel-item" href="#two!"><img src="imgs/carousel/carousel2.jpg"></a>
+            <a class="carousel-item" href="#three!"><img src="imgs/carousel/carousel3.jpg"></a>
+            <a class="carousel-item" href="#four!"><img src="imgs/carousel/carousel4.jpg"></a>
+            <a class="carousel-item" href="#five!"><img src="imgs/carousel/carousel5.jpg"></a>
+            <a class="carousel-item" href="#six!"><img src="imgs/carousel/carousel6.jpg"></a>
+            <a class="carousel-item" href="#seven!"><img src="imgs/carousel/carousel7.jpg"></a>
+            <a class="carousel-item" href="#eight!"><img src="imgs/carousel/carousel8.jpg"></a>
+            <a class="carousel-item" href="#nine!"><img src="imgs/carousel/carousel9.jpg"></a>
+            <a class="carousel-item" href="#ten!"><img src="imgs/carousel/carousel10.jpg"></a>
+          </div>
+          -->
+          <div class="row">
+            <div class="col l1 hide-on-med-and-down">
+              <a id="prev" class="btn-floating btn-medium waves-effect waves-light #b71c1c red darken-4 right"><i class="material-icons">play_arrow</i></a>
+              <a id="paused" class="btn-floating btn-small waves-effect waves-light #b71c1c red darken-4 right"><i class="material-icons">pause</i></a>
+            </div>
+
+            <div class="col s12 m12 l9">
+              <div class="slider">
+                <ul class="slides">
+                  <li>
+                    <img class="" src="imgs/carousel/carousel1.jpg">
+                    <div class="caption right-align">
+                      <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="imgs/carousel/carousel2.jpg"> <!-- random image -->
+                    <div class="caption right-align">
+                      <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="imgs/carousel/carousel3.jpg"> <!-- random image -->
+                    <div class="caption right-align">
+                      <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="imgs/carousel/carousel4.jpg"> <!-- random image -->
+                    <div class="caption right-align">
+                      <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="imgs/carousel/carousel5.jpg"> <!-- random image -->
+                    <div class="caption right-align">
+                      <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="imgs/carousel/carousel6.jpg"> <!-- random image -->
+                    <div class="caption right-align">
+                      <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="imgs/carousel/carousel7.jpg"> <!-- random image -->
+                    <div class="caption right-align">
+                      <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="imgs/carousel/carousel8.jpg"> <!-- random image -->
+                    <div class="caption right-align">
+                      <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="imgs/carousel/carousel9.jpg"> <!-- random image -->
+                    <div class="caption right-align">
+                      <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="imgs/carousel/carousel10.jpg"> <!-- random image -->
+                    <div class="caption right-align">
+                      <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col l1 hide-on-med-and-down">
+            <a id="next" class="btn-floating btn-medium waves-effect waves-light #b71c1c red darken-4 left"><i class="material-icons">play_arrow</i></a>
             </div>
           </div>
         </div>
@@ -159,7 +266,7 @@
           <div class="row contacts">
             <div class="col s1 m2 l1"><i class="material-icons white-text mail">email</i></div>
             <div class="col s10 m10 l10">
-              <p class="left-align white-text"><a href="mailto:rfeximport@yahoo.com.br?Subject=Contato%20pelo%20Site" target="_top">rfeximport@yahoo.com</a></p>
+              <p class="left-align white-text"><a href="mailto:rfeximport@yahoo.com.br?Subject=Contato%20pelo%20Site" target="_top">rfeximport@yahoo.com.br</a></p>
             </div>
           </div>
           <div class="row contacts">
@@ -197,7 +304,7 @@
         </div>
       </footer>
 
-      <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+      <!--<script src="//code.jquery.com/jquery-1.12.4.js"></script>-->
       <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
       <script type="text/javascript" src="js/index/indexjs.js"></script>

@@ -1,8 +1,59 @@
 (function($){
   $(function(){
   	$(window).scrollTop(0);
-  	$("div.second").hide();
+  	$("div.second, a#paused").hide();
   	$(".button-collapse").sideNav();
+  	$(".dropdown-button").dropdown({hover:true, constrainWidth:false});
+    $('.carousel').carousel({dist:-15, noWrap:true});
+    $('.materialboxed').materialbox();
+    $('.slider').slider({height:550, indicators:false, interval:5000});
+
+  	//LANGUAGE CHOOSE
+  	$(".esp, .eng").hide();
+  	$("li.portChoose").addClass("active");
+
+  	$("li.engChoose").click(function(){
+  		$(".esp, .pt").hide();
+  		$(".eng").show();
+  		$("li.portChoose, li.espChoose").removeClass("active");
+  		$("li.engChoose").addClass("active");
+  		$(".dropdown-button").dropdown('close');
+  	});
+
+  	$("li.portChoose").click(function(){
+  		$(".esp, .eng").hide();
+  		$(".pt").show();
+  		$("li.engChoose, li.espChoose").removeClass("active");
+  		$("li.portChoose").addClass("active");
+  		$(".dropdown-button").dropdown('close');
+  	});
+
+  	$("li.espChoose").click(function(){
+  		$(".eng, .pt").hide();
+  		$(".esp").show();
+  		$("li.portChoose, li.engChoose").removeClass("active");
+  		$("li.espChoose").addClass("active");
+  		$(".dropdown-button").dropdown('close');
+  	});
+
+
+/*
+  	function getLocation() {
+	    if (navigator.geolocation) {
+			console.log("Browser Supported")
+	        navigator.geolocation.getCurrentPosition(showPosition);
+	    }
+	}
+	function showPosition(position) {
+	    console.log("Latitude: " + position.coords.latitude + 
+	    "\nLongitude: " + position.coords.longitude); 
+	}
+
+	$.getJSON('http://freegeoip.net/json/', function(result) {
+		alert(result.country_code);
+	});*/
+
+
 
   	$(document).ready(function(){
       $('.parallax').parallax();
@@ -22,8 +73,6 @@
 
     $(window).on('scroll', function(){
 		var scrollPos = $(window).scrollTop();
-
-		console.log(scrollPos);
 
 		if(scrollPos > scrollLimit){
 			$('div.first').fadeOut(150, function(){
@@ -127,6 +176,28 @@
 		$('html, body').animate({
 	        scrollTop: 0
 	    }, 600);
+	});
+
+	$("a#prev").click(function(){
+		$('.slider').slider('prev');
+	});
+
+	$("a#next").click(function(){
+		$('.slider').slider('next');
+	});
+
+	var once = false;
+
+	$("ul.slides img").hover(function(){
+		$('.slider').slider('pause');
+		if(!once){
+			$('a#paused').fadeIn();
+			once = true;
+		}
+	}, function(){
+		$('.slider').slider('start');
+		$('a#paused').fadeOut(300);
+		once = false;
 	});
 
   });

@@ -301,22 +301,3 @@ a#prev {
 		text-transform: uppercase;
 	}
 }
-/*
-@media only screen and (max-height: 600px){
-	.parallax-container {
-		height: 380px;
-	}
-
-	div.first-section h5 {
-		font-size: 125%;
-	}
-
-	div.second img.logo {
-		margin-top: 4%;
-		margin-left: 0%;
-	}
-
-	div.second a.brand-logo {
-		margin-left: 10%;
-	}
-}*/

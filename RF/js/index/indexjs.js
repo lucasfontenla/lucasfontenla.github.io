@@ -213,12 +213,5 @@
 		$("#modal-mobile").modal('open');
 	});
 
-	if(window.innerHeight < 600){
-		$(".parallax-container").css({"height": "380px"});
-		$("div.first-section h5").css({"font-size": "125%"});
-		$("div.second img.logo").css({"margin-top": "4%", "margin-left": "0%"});
-		$("div.second a.brand-logo").css({"margin-left": "10%"});
-	}
-
   });
 })(jQuery);

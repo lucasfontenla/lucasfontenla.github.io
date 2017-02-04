@@ -31,7 +31,7 @@
   	$("li.portChoose").click(function(){
   		$("#modal-mobile").modal('close');
   		$("#nav-mobile").sideNav('hide');
-  		$(".esp, .eng, disv#modal-mobile li.portChoose").hide();
+  		$(".esp, .eng, div#modal-mobile li.portChoose").hide();
   		$(".pt, div#modal-mobile li.espChoose, div#modal-mobile li.engChoose").show();
   		$("li.engChoose, li.espChoose").removeClass("active");
   		$("li.portChoose").addClass("active");

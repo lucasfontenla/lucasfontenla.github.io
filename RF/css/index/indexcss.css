@@ -163,6 +163,20 @@ ul#languageDropdown a {
 	font-size: 110%;
 }
 
+ul#languageDropdown2 {
+	min-width: 155px;
+}
+
+ul#languageDropdown2 img {
+	height: 15%;
+	width: 15%;
+	margin-right: 5%;
+}
+
+ul#languageDropdown2 a {
+	font-size: 110%;
+}
+
 a.btn-floating {
 	margin-top: 250px;
 }
@@ -269,6 +283,22 @@ a#prev {
 	div#contato i.telephone {
 		margin-top: 200%;
 		margin-left: -1200%;
+	}
+
+	img.flag {
+		height: 10%;
+		width: 10%;
+		margin-right: 5%;
+		margin-left: 5%;
+	}
+
+	#modal-mobile li {
+		margin-top: 5%;
+	}
+
+	#modal-mobile a {
+		font-size: 125%;
+		text-transform: uppercase;
 	}
 }
 

@@ -15,7 +15,19 @@
     <body>
 <!--NAV-->
       <!--first-->
-      <ul id="nav-mobile" class="side-nav">
+
+        <div id="modal-mobile" class="modal">
+          <div class="modal-content">
+            <h4>Language</h4>
+            <ul>
+              <li class="engChoose"><a href="#!"><img class="flag" src="imgs/flags/united-kingdom.png">English</a></li>
+              <li class="espChoose"><a href="#!"><img class="flag" src="imgs/flags/spain.png">Español</a></li>
+              <li class="portChoose"><a class="portChoose" href="#!"><img class="flag" src="imgs/flags/brazil.png">Português</a></li>
+            </ul>
+          </div>
+        </div>
+
+      <ul id="nav-mobile" class="side-nav change">
         <li><div class="row">
           <div class="container">
             <div class="col s2">
@@ -27,13 +39,19 @@
           </div>
         </div></li>
         <li><div class="container"><div class="divider"></div></div></li>
-        <li><a class="center sobreClick" href="#!sobre">Sobre</a></li>
-        <li><a class="center atuacaoClick" href="#!atuacao">Atuação</a></li>
-        <li><a class="center contatoClick" href="#!contato">Contato</a></li>
-        <li><a class="center languageChange" href="#!">Language</a></li>        
+        <li class="here"><a class="center sobreClick" href="#!sobre">Sobre</a></li>
+        <li class="here"><a class="center atuacaoClick" href="#!atuacao">Atuação</a></li>
+        <li class="here"><a class="center contatoClick" href="#!contato">Contato</a></li>
+        <li class="here"><a class="center languageChange" href="#!">Language</a></li>        
       </ul>
 
-      <ul id='languageDropdown' class='dropdown-content' data-constrainwidth="falses">
+      <ul id='languageDropdown' class='dropdown-content' data-constrainwidth="false">
+        <li class="engChoose"><a href="#!"><img class="flag" src="imgs/flags/united-kingdom.png">English</a></li>
+        <li class="espChoose"><a href="#!"><img class="flag" src="imgs/flags/spain.png">Español</a></li>
+        <li class="portChoose"><a class="portChoose" href="#!"><img class="flag" src="imgs/flags/brazil.png">Português</a></li>
+      </ul>
+
+      <ul id='languageDropdown2' class='dropdown-content' data-constrainwidth="false">
         <li class="engChoose"><a href="#!"><img class="flag" src="imgs/flags/united-kingdom.png">English</a></li>
         <li class="espChoose"><a href="#!"><img class="flag" src="imgs/flags/spain.png">Español</a></li>
         <li class="portChoose"><a class="portChoose" href="#!"><img class="flag" src="imgs/flags/brazil.png">Português</a></li>
@@ -43,18 +61,10 @@
         <nav class="transparent z-depth-0" role="navigation">
           <div class="nav-wrapper container">
             
-            <ul class="right hide-on-med-and-down">
-              <li><a class="pt sobreClick" href="#!sobre">Sobre</a></li>
-              <li><a class="esp sobreClick" href="#!sobre">Sobre</a></li>
-              <li><a class="eng sobreClick" href="#!sobre">About</a></li>
-
-              <li><a class="pt atuacaoClick" href="#!atuacao">Atuação</a></li>
-              <li><a class="esp atuacaoClick" href="#!atuacao">Atuación</a></li>
-              <li><a class="eng atuacaoClick" href="#!atuacao">Acting</a></li>
-
-              <li><a class="pt contatoClick" href="#!contato">Contato</a></li>
-              <li><a class="esp contatoClick" href="#!contato">Contato</a></li>
-              <li><a class="eng contatoClick" href="#!contato">Contact</sa></li>
+            <ul class="right hide-on-med-and-down change">
+              <li class="here"><a class="sobreClick" href="#!sobre">Sobre</a></li>
+              <li class="here"><a class="atuacaoClick" href="#!atuacao">Atuação</a></li>
+              <li class="here"><a class="scontatoClick" href="#!contato">Contato</a></li>
 
               <li><a class="languageChange dropdown-button" href="#!" data-activates="languageDropdown"><i class="material-icons">language</i></a></li>
             </ul>
@@ -72,10 +82,12 @@
             <img class="logo" src="imgs/Logo.png">
             <a class="brand-logo" href="#!">RF EXIMPORT</a>
             
-            <ul class="right hide-on-med-and-down">
-              <li><a class="sobreClick" href="#!sobre">Sobre</a></li>
-              <li><a class="atuacaoClick" href="#!atuacao">Atuação</a></li>
-              <li><a class="contatoClick" href="#!contato">Contato</a></li>
+            <ul class="right hide-on-med-and-down change">
+              <li class="here"><a class="sobreClick" href="#!sobre">Sobre</a></li>
+              <li class="here"><a class="atuacaoClick" href="#!atuacao">Atuação</a></li>
+              <li class="here"><a class="contatoClick" href="#!contato">Contato</a></li>
+
+              <li><a class="languageChange dropdown-button2" href="#!" data-activates="languageDropdown2"><i class="material-icons">language</i></a></li>
             </ul>
 
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -91,43 +103,67 @@
       <div class="section white first-section z-depth-4">
         <div class="row container">
           <h2 class="header">RF EXIMPORT</h2>
-          <h5><mark>O Mundo dos negócios mais próximo!</mark></h5>
+          <h5 class="pt"><mark>O Mundo dos negócios mais próximo!</mark></h5>
+          <h5 class="esp"><mark>¡El mundo de los negocios más cercanos!</mark></h5>
+          <h5 class="eng"><mark>The world of business closer!</mark></h5>
         </div>
       </div>
 
       <div id="sobre" class="section #263238 blue-grey darken-4 z-depth-4">
         <div class="row container">
-          <h3 class="header white-text">SOBRE</h3>
+          <h3 class="header white-text pt">SOBRE</h3>
+          <h3 class="header white-text eng">ABOUT</h3>
+          <h3 class="header white-text esp">SOBRE</h3>
           <div class="row sobre-first">
             <div class="col s12 m2 l1"><i class="material-icons white-text business">business</i></div>
             <div class="col s12 m10 l10 sobre-txt">
-              <p class="left-align white-text">RF EXIMPORT, Empresa de sociedade espanhola, vem desde 1985 atuando em comércio Internacional em segmentos primordiais como alimentos, commodities, mineração e segurança, além da intermediação de negócios.</p>
+              <p class="left-align white-text pt">RF EXIMPORT, Empresa de sociedade espanhola, vem desde 1985 atuando em comércio Internacional em segmentos primordiais como alimentos, commodities, mineração e segurança, além da intermediação de negócios.</p>
+
+              <p class="left-align white-text eng">RF EXIMPORT, a company of Spanish society, has been working in international trade since 1985 in primary segments such as food, commodities, mining and security, as well as business intermediation.</p>
+
+              <p class="left-align white-text esp">RF EXIMPORT, empresa de sociedade española, llegado desde 1985 actuando en comercio internacional en segmentos primordiales como alimentos, commodities, minería y seguridad más allá em intermediacion de negócios.</p>
             </div>
           </div>
 
           <div class="row sobre-third">
             <div class="col s12 m2 l1"><i class="material-icons business white-text">work</i></div>
             <div class="col s12 m10 l10 sobre-txt">
-              <p class="left-align white-text">Somos parceiros de Câmaras de Comércio alemã, americana, africana, chinesa e espanhola. <a id="parceiros-modal" href="#parceiros!" class="red-text text-darken-4">Veja Parcerias Aqui</a></p>
+              <p class="left-align white-text pt">Somos parceiros de Câmaras de Comércio alemã, americana, africana, chinesa e espanhola. <a id="parceiros-modal" href="#parceiros!" class="red-text text-darken-4">Veja Parcerias Aqui</a></p>
+
+              <p class="left-align white-text eng">We are partners of German, American, African, Chinese and Spanish Chamber of Commerce. <a id="parceiros-modal" href="#parceiros!" class="red-text text-darken-4">See partnerships here.</a></p>
+
+              <p class="left-align white-text esp">Somos membros-parceros de las Cámaras de Comercio alemana, americana, africana, china y española em Brasil. <a id="parceiros-modal" href="#parceiros!" class="red-text text-darken-4">Vea aquí las asociaciones.</a></p>
             </div>
           </div>
 
           <div id="modal1" class="modal modal-fixed-footer">
             <div class="modal-content">
-              <h4>Parcerias</h4>
+              <h4 class="pt">Parcerias</h4>
+              <h4 class="eng">Partners</h4>
+              <h4 class="esp">Asociaciones</h4>
+
               <div class="divider"></div>
               <table class="striped">
                 <thead>
                   <tr>
-                      <th>Ramo</th>
-                      <th>Nome da Empresa</th>
+                      <th class="pt">Ramo</th>
+                      <th class="eng">Branch</th>
+                      <th class="esp">Rama</th>
+
+                      <th class="pt">Nome da Empresa</th>
+                      <th class="eng">Company Name</th>
+                      <th class="esp">Nombre de la Empresa</th>
+
                       <th>Link</th>
                   </tr>
                 </thead>
 
                 <tbody>
                   <tr>
-                    <td>Consultoria</td>
+                    <td class="pt">Consultoria</td>
+                    <td class="eng">Consulting</td>
+                    <td class="esp">Consultoria</td>
+
                     <td>Goldmann</td>
                     <td><a href="http://www.goldmann.com.br" target="_blank">link</a></td>
                   </tr>
@@ -137,7 +173,10 @@
                     <td><a href="http://www.aggrego.com.br" target="_blank">link</a></td>
                   </tr>
                   <tr>
-                    <td>Bancos</td>
+                    <td class="pt">Bancos</td>
+                    <td class="eng">Banks</td>
+                    <td class="esp">Bancos</td>
+
                     <td>Grupo Safra S.A.</td>
                     <td><a href="http://www.safra.com.br" target="_blank">link</a></td>
                   </tr>
@@ -152,7 +191,11 @@
           <div class="row sobre-second">
             <div class="col s12 m2 l1"><img class="circle profile-picture" src="imgs/carousel/profile-picture.jpg"></div>
             <div class="col s12 m10 l10 sobre-txt">
-              <p class="left-align white-text">Seu sócio-fundador, administrador de empresas JOSÉ MANOEL "MANOLO" EIRAS FONTENLA, radicado desde 1957 no Brasil e com parceiros estratégicos em diversos países de todos os continentes, atua diretamente nas negociações e busca de oportunidades mundiais.</p>
+              <p class="left-align white-text pt">Seu sócio-fundador, administrador de empresas JOSÉ MANOEL "MANOLO" EIRAS FONTENLA, radicado desde 1957 no Brasil e com parceiros estratégicos em diversos países de todos os continentes, atua diretamente nas negociações e busca de oportunidades mundiais.</p>
+
+              <p class="left-align white-text eng">His founding partner, business administrator JOSÉ MANOEL "MANOLO" EIRAS FONTENLA, who has been living in Brazil since 1957 and with strategic partners in several countries on all continents, acts directly in the negotiations and search for opportunities worldwide.</p>
+
+              <p class="left-align white-text esp">Su socio-fundador, ADMINISTRADOR DE EMPRESAS Y CEO JOSE MANOEL EIRAS (MANOLO) FONTENLA, arraigado desde 1957 EN BRASIL Y CON parceros ESTRATÉGICOS en diversos paises de todos los continentes, operando directamente en las negociaciones y  BÚSQUEDA de oportunidades mundiales.</p>
             </div>
           </div>
 
@@ -242,31 +285,64 @@
 
       <div id="atuacao" class="section #b71c1c red darken-4 z-depth-4">
         <div class="row container">
-          <h3 class="header white-text">ATUAÇÃO</h3>
+          <h3 class="header white-text pt">ATUAÇÃO</h3>
+          <h3 class="header white-text eng">ACTING</h3>
+          <h3 class="header white-text esp">ATUACIÓN</h3>
           <div class="row">
             <div class="col s12 m6 l4">
               <img class="circle z-depth-3" src="imgs/food-industry.jpg">
-              <h5 class="white-text center"><mark class="z-depth-3">Produtos alimentícios</mark></h5>
+              <h5 class="white-text center pt"><mark class="z-depth-3">Produtos alimentícios</mark></h5>
+              <h5 class="white-text center eng"><mark class="z-depth-3">Food Products</mark></h5>
+              <h5 class="white-text center esp"><mark class="z-depth-3">Produtos alimenticios</mark></h5>
               <div class="container">
-                <p class="white-text center">-<mark>Tipicamente brasileiros</mark> (Tradicionais e Organicos) = Frutas e Sucos Tropicais, Pao de Queijo, Acai,
+                <p class="white-text center pt">-<mark>Tipicamente brasileiros</mark> (Tradicionais e Organicos) = Frutas e Sucos Tropicais, Pao de Queijo, Acai,
                 Cafe, Carnes, Naturais entre outros.</p>
-                <p class="white-text center">-<mark>Frutas e vinhos da America Latina,</mark> como Chile, Argentina e Uruguay e da Europa como Espanha, Portugal e Italia.</p>
+                <p class="white-text center pt">-<mark>Frutas e vinhos da America Latina,</mark> como Chile, Argentina e Uruguay e da Europa como Espanha, Portugal e Italia.</p>
+
+                <p class="white-text center eng"><mark>Typically Brazilian</mark> (Traditional and Organic) = Tropical Fruits and Juices, Cheese (roll) Bread, Acai, Cofee, Meat, Natural, among others.</p>
+                <p class="white-text center eng"><mark>Fruits and wines from Latin America,</mark> such as Chile, Argentina and Uruguay and from Europe such as Spain, Portugal and Italy.</p>
+
+                <p class="white-text center esp"><mark>Típicamente brasileños</mark> (tradicional y orgánicos) = frutas y jugos tropicales, queso Pan de Queso, Acai, Café, Carnes, Natural, entre otros.</p>
+                <p class="white-text center esp"><mark>Frutas y vinos de América Latina</mark>, como Chile, Argentina y Uruguay y Europa como España, Portugal e Italia.</p>
               </div>
             </div>
 
             <div class="col s12 m6 l4">
               <img class="circle z-depth-3" src="imgs/ethanol.jpg">
-              <h5 class="white-text center"><mark class="z-depth-3">Commodities</mark></h5>
+              <h5 class="white-text center pt"><mark class="z-depth-3">Commodities</mark></h5>
+              <h5 class="white-text center eng"><mark class="z-depth-3">Commodities</mark></h5>
+              <h5 class="white-text center esp"><mark class="z-depth-3">Commodities</mark></h5>
+
               <div class="container">
-                <p class="white-text center">Açúcar/Etanol Brasileiros</p>
+                <p class="white-text center pt"><mark>Açúcar/Etanol Brasileiros.</mark> Comercializamos vendas <mark>SPOT de 1000 a 10000MT e futuras acima desse limite</mark>, embarques em containers e a granel, principalmente aos mercados americano, coreano e chinês. <mark>Principal parceiro Bionergia.</mark></p>
+
+                <p class="white-text center eng"><mark>Brazilian Sugar/Ethanol and Soy.</mark>
+                We commercialize <mark>SPOT sales of 1,000 to 10,000MT and future above this limit,</mark> shipments in containers and in bulk, mainly to the American, Korean and Chinese markets.
+                <mark>Main partner Bionergia.</mark></p>
+
+                <p class="white-text center esp"><mark>Azúcar/Etanol y Soya.</mark>
+                Vendemos <mark>SPOT a partir de 1.000 a 10.000MT</mark> y futuro por encima de ese límite, con envíos en contenedores y granel, principalmente a los mercados americano, coreano y chino.
+                <mark>Parcero principal es Bioenergía.</mark></p>
               </div>
             </div>
 
             <div class="col s12 m12 l4">
               <img class="circle z-depth-3" src="imgs/mining.jpg">
-              <h5 class="white-text center"><mark class="z-depth-3">Mineração</mark></h5>
+              <h5 class="white-text center pt"><mark class="z-depth-3">Mineração</mark></h5>
+              <h5 class="white-text center eng"><mark class="z-depth-3">Mining</mark></h5>
+              <h5 class="white-text center esp"><mark class="z-depth-3">Mineria</mark></h5>
               <div class="container">
-                <p class="white-text center">-<mark>Manganês e Ouro,</mark> tendo participação nas empresas <mark>MINERAX e PROSPEX.</mark></p>
+                <p class="white-text center pt"><mark>Manganês e Ouro,</mark> tendo participação nas empresas <mark>MINERAX e PROSPEX.</mark>Exportamos essencialmente para China, Coreia do Sul e Ucrania.</p>
+                <p class="white-text center pt">Vendas mínimas mensais de <mark>2.000 a 15.000MT.</mark></p> 
+                <p class="white-text center pt"s>Parceiros ativos mundiais como <mark>Latrobe Fertilisers, Amazônia Gold, Mias, Murship entre outros.</mark></p>
+
+                <p class="white-text center eng"><mark>Manganese and Gold.</mark> Having participated in the <mark>MINERAX and PROSPEX</mark> companies. We export mainly to China, South Korea and Ukraine.</p>
+                <p class="white-text center eng">Minimum monthly <mark>sales of 2,000 to 15,000MT.</mark></p> 
+                <p class="white-text center eng">Active worldwide partners such as <mark>Latrobe Fertilisers, Amazon Gold, Mias, Murship among others.</mark></p>
+
+                <p class="white-text center esp"><mark>Manganeso y oro.</mark> Participación en empresas <mark>MINERAX y Prospex.</mark> Exportamos principalmente a China, Corea del Sur y Ucrania.</p>
+                <p class="white-text center esp">Ventas mensuales mínimas de <mark>2.000 a 15.000MT.</mark></p> 
+                <p class="white-text center esp">Parceros activos globales como <mark>Latrobe Fertilisers, Amazonaia Gold, Mias, Murship entre otros.</mark></p>
               </div>
             </div>
           </div>
@@ -274,18 +350,33 @@
           <div class="row">
             <div class="col s12 m6 l4 offset-l2">
               <img class="circle z-depth-3" src="imgs/shield.jpg">
-              <h5 class="white-text center"><mark class="z-depth-3">Segurança Privada e Pública</mark></h5>
+              <h5 class="white-text center pt"><mark class="z-depth-3">Segurança Privada e Pública</mark>
+              <h5 class="white-text center eng"><mark class="z-depth-3">Segurança Privada e Pública</mark>
+              <h5 class="white-text center esp"><mark class="z-depth-3">Seguridad Pública y Privada</mark></h5>
               <div class="container">
-                <p class="white-text center">Equipamentos pessoais e eletrônicos, veículos e acessórios para a <mark>área civil e militar</mark> e principalmente no setor de <mark>blindagem veicular</mark> atuando indiretamente com blindadoras de São Paulo.</p>
-                <p class="white-text center">Desenvolvimento de <mark>novas tecnologias</mark> com parcerias internacionais.</p>
+                <p class="white-text center pt">Equipamentos pessoais e eletrônicos, veículos e acessórios para a <mark>área civil e militar</mark> e principalmente no setor de <mark>blindagem veicular</mark> atuando indiretamente com blindadoras de São Paulo.</p>
+                <p class="white-text center pt">Desenvolvimento de <mark>novas tecnologias</mark> com parcerias internacionais.</p>
+
+                <p class="white-text center eng">Personal and electronic equipment, vehicles and accessories for the <mark>civil and military area</mark> and mainly in the sector of <mark>vehicular shielding</mark> acting indirectly with shields of S.Paulo.</p>
+                <p class="white-text center eng">Development of <mark>new technologies</mark> with international partnerships.</p>
               </div>
-            </div>
+
+                <p class="white-text center esp">Equipamiento personal y electrónicos, vehículos y accesorios para las <mark>áreas civil y militar</mark> y en especial en el sector de los <mark>vehículos blindados.</mark> Trabajando indirectamente com blindadoras de S.Paulo.</p>
+                <p class="white-text center esp">Desarrollo de <mark>nuevas tecnologías</mark> con parceros internacionales.</p>
+              </div>
 
             <div class="col s12 m6 l4">
               <img class="circle z-depth-3" src="imgs/business.jpg">
-              <h5 class="white-text center"><mark class="z-depth-3">Intermediação de negócios</mark></h5>
+              <h5 class="white-text center pt"><mark class="z-depth-3">Intermediação de negócios</mark></h5>
+              <h5 class="white-text center eng"><mark class="z-depth-3">Business Intermediate</mark></h5>
+              <h5 class="white-text center esp"><mark class="z-depth-3">Intermediaciones Comerciales</mark></h5>
+
               <div class="container">
-                <p class="white-text center">Em conjunto com <mark>Fundos de Investimentos</mark>, Bancos e Agentes Internacionais atuamos na <mark>negociação de sociedades e empresas</mark> como Usinas de Açúcar e Etanol, Frigoríficos, Ativos Minerais entre outros.</p>
+                <p class="white-text center pt">Em conjunto com Fundos de Investimentos, Bancos e Agentes Internacionais como <mark>Proinvest, Credit Suisse, Safra, Goldmann, Aggrego, Gavea, Apex, US Commercial Service,Spain Business entre outros</mark>, atuamos na negociacao de capitais (Private Equity e M&A) sociedades e empresas como Usinas de Acucar e Etanol, Frigorificos, Ativos Minerais entre outros.</p>
+
+                <p class="white-text center eng">Together with Investment Funds, Banks and International Agents such as <mark>Proinvest, Credit Suisse, Safra, Goldmann, Aggrego, Gavea, Apex, US Commercial Service, Spain Business among others,</mark> we operate in the trading of capital (Private Equity and M&A) companies Such as Sugar and Ethanol Plants, Fridges, Mineral Assets and others.</p>
+
+                <p class="white-text center esp">Junto con los Fondos de Inversión, Bancos y Agentes Internacionales como <mark>Proinvest, Credit Suisse, Safra, Goldmann, Aggrego, Gavea, Apex, US Commercial Service, Spain Business entre otros,</mark> operamos en negociación de capitales (Private Equity y M&E) y actuando na negociación de compañías y empresas como Usinas de Azucar y Etanol, Frigorificos, Activos Minerales entre otros.</p>
               </div>
             </div>
           </div>
@@ -294,8 +385,14 @@
 
       <div id="contato" class="section #263238 blue-grey darken-4">
         <div class="row container">
-          <h3 class="header white-text">CONTATO</h3>
-          <p class="white-text">Envie-nos um e-mail ou nos telefone.
+          <h3 class="header white-text pt">CONTATO</h3>
+          <h3 class="header white-text eng">CONTACT</h3>
+          <h3 class="header white-text esp">CONTACTO</h3>
+
+          <p class="white-text pt">Envie-nos um e-mail ou nos telefone.</p>
+          <p class="white-text eng">Send us an e-mail or call us.</p>
+          <p class="white-text esp">Envíenos un correo electrónico o llámenos.</p>
+
           <div class="row contacts">
             <div class="col s1 m2 l1"><i class="material-icons white-text mail">email</i></div>
             <div class="col s10 m10 l10">
@@ -316,7 +413,9 @@
           <div class="row">
             <div class="col l6 s12">
               <h5 class="blue-grey-text text-darken-4">RF EXIMPORT</h5>
-              <p class="grey-text text-lighten-4"><mark>O mundo dos negócios mais próximo!</mark></p>
+              <p class="grey-text text-lighten-4 pt"><mark>O mundo dos negócios mais próximo!</mark></p>
+              <p class="grey-text text-lighten-4 esp"><mark>¡El mundo de los negocios más cercanos!</mark></p>
+              <p class="grey-text text-lighten-4 eng"><mark>The world of business closer!</mark></p>
             </div>
             <div class="col l4 offset-l2 s12 news">
               <h5 class="blue-grey-text text-darken-4">Notícias</h5>

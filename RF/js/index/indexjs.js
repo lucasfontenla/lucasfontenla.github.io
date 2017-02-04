@@ -4,56 +4,55 @@
   	$("div.second, i.play-icon").hide();
   	$(".button-collapse").sideNav();
   	$(".dropdown-button").dropdown({hover:true, constrainWidth:false});
+  	$(".dropdown-button2").dropdown({hover:true, constrainWidth:false});
     $('.carousel').carousel({dist:-15, noWrap:true});
     $('.materialboxed').materialbox();
     $('.slider').slider({height:450, indicators:false, interval:5000});
-    $('.modal').modal();
+    $('#modal1').modal();
+    $('#modal-mobile').modal();
 
   	//LANGUAGE CHOOSE
-  	$(".esp, .eng").hide();
+  	$(".esp, .eng, div#modal-mobile li.portChoose").hide();
   	$("li.portChoose").addClass("active");
 
   	$("li.engChoose").click(function(){
-  		$(".esp, .pt").hide();
-  		$(".eng").show();
+  		$("#modal-mobile").modal('close');
+  		$("#nav-mobile").sideNav('hide');
+  		$(".esp, .pt, div#modal-mobile li.engChoose").hide();
+  		$(".eng, div#modal-mobile li.espChoose, div#modal-mobile li.portChoose").show();
   		$("li.portChoose, li.espChoose").removeClass("active");
   		$("li.engChoose").addClass("active");
   		$(".dropdown-button").dropdown('close');
+  		$("a.sobreClick").text('ABOUT');
+  		$("a.atuacaoClick").text('ACTING');
+  		$("a.contatoClick").text('CONTACT');
   	});
 
   	$("li.portChoose").click(function(){
-  		$(".esp, .eng").hide();
-  		$(".pt").show();
+  		$("#modal-mobile").modal('close');
+  		$("#nav-mobile").sideNav('hide');
+  		$(".esp, .eng, div#modal-mobile li.portChoose").hide();
+  		$(".pt, div#modal-mobile li.espChoose, div#modal-mobile li.engChoose").show();
   		$("li.engChoose, li.espChoose").removeClass("active");
   		$("li.portChoose").addClass("active");
   		$(".dropdown-button").dropdown('close');
+  		$("a.sobreClick").text('SOBRE');
+  		$("a.atuacaoClick").text('ATUAÇÃO');
+  		$("a.contatoClick").text('CONTATO');
   	});
 
   	$("li.espChoose").click(function(){
-  		$(".eng, .pt").hide();
-  		$(".esp").show();
+  		$("#modal-mobile").modal('close');
+  		$("#nav-mobile").sideNav('hide');
+  		$(".eng, .pt, div#modal-mobile li.espChoose").hide();
+  		$(".esp, div#modal-mobile li.engChoose, div#modal-mobile li.portChoose").show();
   		$("li.portChoose, li.engChoose").removeClass("active");
   		$("li.espChoose").addClass("active");
   		$(".dropdown-button").dropdown('close');
+  		$("a.sobreClick").text('SOBRE');
+  		$("a.atuacaoClick").text('ATUACIÓN');
+  		$("a.contatoClick").text('CONTACTO');
   	});
-
-
-/*
-  	function getLocation() {
-	    if (navigator.geolocation) {
-			console.log("Browser Supported")
-	        navigator.geolocation.getCurrentPosition(showPosition);
-	    }
-	}
-	function showPosition(position) {
-	    console.log("Latitude: " + position.coords.latitude + 
-	    "\nLongitude: " + position.coords.longitude); 
-	}
-
-	$.getJSON('http://freegeoip.net/json/', function(result) {
-		alert(result.country_code);
-	});*/
-
 
 
   	$(document).ready(function(){
@@ -88,18 +87,18 @@
 		}
 
 		if(scrollPos >= 600){
-			$("nav ul li:nth-child(1)").addClass("active");
-			$("nav ul li:nth-child(2)").removeClass("active");
-			$("nav ul li:nth-child(3)").removeClass("active");
+			$("li.here:nth-child(1)").addClass("active");
+			$("li.here:nth-child(2)").removeClass("active");
+			$("li.here:nth-child(3)").removeClass("active");
 			$("ul#nav-mobile li:nth-child(3)").addClass("active");
 			$("ul#nav-mobile li:nth-child(4)").removeClass("active");
 			$("ul#nav-mobile li:nth-child(5)").removeClass("active");
 			$("div.second nav").css({"background-image": "linear-gradient(#b71c1c, #b71c1c)"});
 		}
-		if(scrollPos >= 1300){
-			$("nav ul li:nth-child(2)").addClass("active");
-			$("nav ul li:nth-child(1)").removeClass("active");
-			$("nav ul li:nth-child(3)").removeClass("active");
+		if(scrollPos >= 1800){
+			$("li.here:nth-child(2)").addClass("active");
+			$("li.here:nth-child(1)").removeClass("active");
+			$("li.here:nth-child(3)").removeClass("active");
 			$("ul#nav-mobile li:nth-child(4)").addClass("active");
 			$("ul#nav-mobile li:nth-child(3)").removeClass("active");
 			$("ul#nav-mobile li:nth-child(5)").removeClass("active");
@@ -107,10 +106,10 @@
 				$("div.second nav").css({"background-image": "linear-gradient(#263238, #263238)"});
 			}
 		}
-		if(scrollPos > 2000){
-			$("nav ul li:nth-child(3)").addClass("active");
-			$("nav ul li:nth-child(1)").removeClass("active");
-			$("nav ul li:nth-child(2)").removeClass("active");
+		if(scrollPos > 2700){
+			$("li.here:nth-child(3)").addClass("active");
+			$("li.here:nth-child(1)").removeClass("active");
+			$("li.here:nth-child(2)").removeClass("active");
 			$("ul#nav-mobile li:nth-child(5)").addClass("active");
 			$("ul#nav-mobile li:nth-child(4)").removeClass("active");
 			$("ul#nav-mobile li:nth-child(3)").removeClass("active");
@@ -140,7 +139,7 @@
 		}
 		else {
 			$('html, body').animate({
-		        scrollTop: $("#sobre").offset().top-140
+		        scrollTop: $("#sobre").offset().top-40
 		    }, 600);
 		}
 	});
@@ -208,6 +207,10 @@
 
 	$("a#parceiros-modal").click(function(){
 		$('#modal1').modal('open');
+	});
+
+	$("#nav-mobile .languageChange").click(function(){
+		$("#modal-mobile").modal('open');
 	});
 
   });

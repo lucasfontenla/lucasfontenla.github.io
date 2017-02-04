@@ -301,7 +301,7 @@ a#prev {
 		text-transform: uppercase;
 	}
 }
-
+/*
 @media only screen and (max-height: 600px){
 	.parallax-container {
 		height: 380px;
@@ -319,4 +319,4 @@ a#prev {
 	div.second a.brand-logo {
 		margin-left: 10%;
 	}
-}
+}*/

@@ -1,7 +1,7 @@
 (function($){
   $(function(){
   	$(window).scrollTop(0);
-  	$("div.second, i.play-icon").hide();
+  	$("div.second, i.play-icon, ul.slides h5").hide();
   	$(".button-collapse").sideNav();
   	$(".dropdown-button").dropdown({hover:true, constrainWidth:false});
   	$(".dropdown-button2").dropdown({hover:true, constrainWidth:false});

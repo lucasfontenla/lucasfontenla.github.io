@@ -1,7 +1,7 @@
 (function($){
   $(function(){
   	$(window).scrollTop(0);
-  	$("div.second, i.play-icon, ul.slides h5").hide();
+  	$("div.second, i.play-icon").hide();
   	$(".button-collapse").sideNav();
   	$(".dropdown-button").dropdown({hover:true, constrainWidth:false});
   	$(".dropdown-button2").dropdown({hover:true, constrainWidth:false});
@@ -10,6 +10,7 @@
     $('.slider').slider({height:450, indicators:false, interval:5000});
     $('#modal1').modal();
     $('#modal-mobile').modal();
+    $('#modal-safety').modal();
 
   	//LANGUAGE CHOOSE
   	$(".esp, .eng, div#modal-mobile li.portChoose").hide();
@@ -211,6 +212,10 @@
 
 	$("#nav-mobile .languageChange").click(function(){
 		$("#modal-mobile").modal('open');
+	});
+
+	$('.knowMore').click(function(){
+		$('#modal-safety').modal('open');
 	});
 
   });

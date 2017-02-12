@@ -115,6 +115,8 @@ div#atuacao mark {
 
 div#atuacao p {
 	font-size: 105%;
+	text-align: justify;
+	text-justify: inter-word;
 }
 
 div#atuacao div.col {
@@ -187,6 +189,23 @@ a.btn-floating.btn-small {
 
 a#prev {
 	transform: rotate(180deg);
+}
+
+ul.slides h5 {
+	margin-top: 50%;
+}
+
+ul.slides h5 mark {
+	background-color: #263238;
+	padding: 0, 6%, 0, 6%;
+	color: white;
+	font-size: 85%;
+}
+
+div#modal-safety img {
+	height: 90%;
+	width: 90%;
+	margin-top: 45%;
 }
 
 @media only screen and (max-width: 600px){

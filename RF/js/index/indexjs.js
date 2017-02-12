@@ -51,7 +51,7 @@
   		$("li.espChoose").addClass("active");
   		$(".dropdown-button").dropdown('close');
   		$("a.sobreClick").text('SOBRE');
-  		$("a.atuacaoClick").text('ATUACIÓN');
+  		$("a.atuacaoClick").text('ACCIÓN');
   		$("a.contatoClick").text('CONTACTO');
   	});
 

@@ -38,23 +38,26 @@ li.getMargin {
 }
 
 /* MAIN */
-/* index content */
-#index {
-  padding-top: 5%;
+/* Título */
+mark {
+  background-image: linear-gradient(to right, #f50057, #f44336, #ff5722);
+  color: white;
+  padding: 1% 2% 1% 2%;
+  font-size: 80%;
 }
 
-.row #index {
-  min-height: 85vh;
+h1.header {
+  margin-top: 1.5%;
 }
 
-/* index profile picture */
-#profile_picture {
-  width: 90%;
-  height: 90%;
+div.row {
+  margin-bottom: .25%;
+  padding-bottom: 0;
 }
 
-#col_ppicture {
-  padding-left: 5%;
+/* Texto */
+div.texto_projeto p {
+  text-align: justify;
 }
 
 /* index name and text */
@@ -135,9 +138,4 @@ footer h5 {
   padding-left: 7.5%;
   padding-right: 7.5%;
   }
-}
-
-/* SOBRE MIM */
-h1.header {
-  margin-top: 100px;
 }

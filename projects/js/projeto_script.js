@@ -51,23 +51,9 @@
 	}
 
 	$("a.sobre-mim").click(function(){
-		if(!$("a.sobre-mim").hasClass("active")){
-			$('.button-collapse').sideNav('hide');
-			$("main div.home").fadeOut(600, function(){
-				//window.location.href = "sobre-mim.html";
-				$("div.sobre, li.home-btn").fadeIn(600);
-
-				if(screen.width < 600){
-					$('div.sobre h1.header').css({"font-size":"230%", "margin":"0", "margin-top":"3%"});
-				}
-				else {
-					$('div.sobre h1.header').css({"font-size":"270%", "margin":"0", "margin-top":"3%"});
-				}
-
-				$('li.home').removeClass('active');
-				$('li.sobre-mim').addClass('active');
-			});
-		}
+		$('.button-collapse').sideNav('hide');
+		sessionStorage.setItem("goToSobre", true);
+		window.location.href = "../index.html"
 	});
 
 	$("a.home").click(function(){

@@ -143,7 +143,7 @@ mark {
 }
 
 #row_faculdade div.card-content p:nth-child(1) {
-  font-size: 275%;
+  font-size: 200%;
 }
 
 #row_faculdade div.col.card_col {
@@ -156,6 +156,8 @@ mark {
 
 .chip {
   margin-bottom: 0;
+  margin-top: 2%;
+  font-size: 85%;
 }
 
 .chip:hover{
@@ -173,7 +175,7 @@ p.faculdade {
 }
 
 .chip-space {
-  padding-top: 4%;
+  padding-top: 0;
 }
 
 #row_faculdade .card-content p:nth-child(2) {
@@ -201,6 +203,10 @@ input#autocomplete-input.autocomplete {
 
 label#autocomplete-label {
   margin-left: 2%;
+}
+
+p.project-title {
+  text-align: left;
 }
 
 @media only screen and (max-width : 600px) {

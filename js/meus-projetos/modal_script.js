@@ -26,12 +26,11 @@
 			});
 	
 			$('#modal_tags').modal('open');
-			$('#modal_tags').modal('reset');
 	
 			//$("#modal_tags img").css({'margin-top':'1%'});
-			$("#modal_tags span.title").css({'font-size':'160%'});
-			$("li.collection-item.avatar").css({'padding-top':'2%', 'padding-bottom':'2%', 'padding-left':'6%'});
-	
+			$("#modal_tags span.title").css({'font-size':'135%'});
+			$("li.collection-item.avatar").css({'padding-top':'2%', 'padding-bottom':'2%', 'padding-left':'10%'});
+			$("ul.autocomplete-content").css({'margin-top': '.5%', 'margin-left':'2%'});
 		});
 	}
 
@@ -89,20 +88,20 @@
 					var toAppend = `
 						<li class="collection-item avatar">
 		                	<img src=` + image + ` alt="" class="circle">
-		                	<span class="title light" style="font-size:150%">`+ title + `</span>
+		                	<span class="title light left-align" style="font-size:135%">`+ title + `</span>
 			                <p></p>
-		                	<a class="deep-orange-text light" href=` + link + `>Saiba Mais</a>
+		                	<a class="deep-orange-text light left-align" href=` + link + `>Saiba Mais</a>
 			            </li> `;
 
 			        $('#modal_tags .modal-content ul').append(toAppend);
 				});
 
 				$('#modal_tags').modal('open');
-				$('#modal_tags').modal('reset');
 
 				//$("#modal_tags img").css({'margin-top':'1%'});
-				$("#modal_tags span.title").css({'font-size':'160%'});
-				$("ul.collection").css({'padding-bottom':'0%', 'max-height':'65px'});
+				$("#modal_tags span.title").css({'font-size':'100%'});
+				$("ul.collection").css({'padding-bottom':'0%'});
+				$("ul.autocomplete-content").css({'margin-top': '.5%', 'margin-left':'2%'});
 
 			});
 
@@ -175,7 +174,7 @@
 			var toAppend = `
 				<li class="collection-item avatar">
                 	<img src=` + image + ` alt="" class="circle">
-                	<span class="title light" style="font-size:150%">`+ title + `</span>
+                	<span class="title light" style="font-size:135%">`+ title + `</span>
 	                <p></p>
                 	<a class="deep-orange-text light" href=` + link + `>Saiba Mais</a>
 	            </li> `;    
@@ -185,8 +184,9 @@
 
 		$('#modal_tags').modal('open');
 		$('#modal_tags').modal('reset');
-		$("#modal_tags span.title").css({'font-size':'160%'});
+		$("#modal_tags span.title").css({'font-size':'135%'});
 		$("ul.collection").css({'padding-bottom':'0%', 'max-height':'65px'});
+		$("ul.autocomplete-content").css({'margin-top': '.5%', 'margin-left':'2%'});
 	});
 
 

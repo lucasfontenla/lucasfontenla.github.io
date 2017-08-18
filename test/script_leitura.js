@@ -1,15 +1,12 @@
-var xhr = new XMLHttpRequest();
-xhr.open("GET", "texto.txt", true);
-xhr.onload = function (e) {
-  if (xhr.readyState === 4) {
-    if (xhr.status === 200) {
-      console.log(xhr.responseText);
-    } else {
-      console.error(xhr.statusText);
-    }
-  }
+path = "https://lucasfontenla.github.io/test/texto.txt";
+
+var file = new XMLHttpRequest();
+file.open("GET", path, true);
+file.onload = function (e) {
+  var read_text = file.responseText
+  console.log(read_text);
 };
-xhr.onerror = function (e) {
-  console.error(xhr.statusText);
+file.onerror = function (e) {
+  console.error(file.statusText);
 };
-xhr.send(null);
+file.send(null);

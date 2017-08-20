@@ -1,18 +1,29 @@
 (function($){
   $(function(){
 
-  	function getTEXT(text){
-  		//Defines
+  	function getTEXT(text, proj){
+  		var each_proj = text.split("#");
+  		var this_proj_text = ""
+  		for(var i = 1; i < each_proj.length; i++){
+  			if(each_proj[i].split(";")[0] === proj){
+  				this_proj_text = each_proj[i].split(";");
+  				break;
+  			}
+  		}
+  		var sections = ['title', 'images', 'content', 'people', "related"];
+  		var text_dict = {};
+  		for (var i = T0; i < sections.length; i++) {
+  			text_dict[sections[i]] = this_proj_text[i];
+  		}
+  		return text_dict;
   	}
-
-  	var project = sessionStorage.openProject;
-  	alert(project)
 
 	var file = new XMLHttpRequest();
 	file.open("GET", "../texto_projetos.html", true);
 	file.onload = function (e) {
 	  var read_text = file.responseText;
-	  getTEXT(read_text);
+	  proj_text = getTEXT(read_text, sessionStorage.openProject);
+	  console.log(proj_text);
 	};
 	file.onerror = function (e) {
 	  console.error(file.statusText);

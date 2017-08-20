@@ -9,7 +9,7 @@
   	alert(project)
 
 	var file = new XMLHttpRequest();
-	file.open("GET", "https://lucasfontenla.github.io/projects/texto_projetos.txt", true); //"../texto_projetos.html"
+	file.open("GET", "../texto_projetos.html", true);
 	file.onload = function (e) {
 	  var read_text = file.responseText;
 	  getTEXT(read_text);

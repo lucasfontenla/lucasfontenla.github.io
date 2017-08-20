@@ -26,7 +26,10 @@
 	  var read_text = file.responseText;
 	  proj_text = getTEXT(read_text, sessionStorage.openProject);
 	  console.log(proj_text);
+	  $("h1 mark.project-title").text(proj_text['title']);
+	  $("p.project-content").text(proj_text['content']);
 	};
+
 	file.onerror = function (e) {
 	  console.error(file.statusText);
 	};

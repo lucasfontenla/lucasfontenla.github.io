@@ -1,6 +1,23 @@
 (function($){
   $(function(){
-  	//$("body").addClass("#263238 blue-grey darken-4");
+
+  	function getTEXT(text){
+  		//Defines
+  	}
+
+  	var project = sessionStorage.openProject;
+  	alert(project)
+
+	var file = new XMLHttpRequest();
+	file.open("GET", "https://lucasfontenla.github.io/projects/texto_projetos.txt", true); //"../texto_projetos.html"
+	file.onload = function (e) {
+	  var read_text = file.responseText;
+	  getTEXT(read_text);
+	};
+	file.onerror = function (e) {
+	  console.error(file.statusText);
+	};
+	file.send(null);
 
   	document.getElementById("body").style.visibility = "visible";
   	$("header, footer, main").hide();

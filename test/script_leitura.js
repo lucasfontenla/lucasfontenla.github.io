@@ -6,7 +6,6 @@ file.onload = function (e) {
   var read_text = file.responseText
   console.log(read_text);
   a = read_text.split("#");
-  console.log(a);
 };
 file.onerror = function (e) {
   console.error(file.statusText);

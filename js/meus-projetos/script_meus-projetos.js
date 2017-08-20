@@ -154,6 +154,24 @@
 		window.location.href = "index.html"
 	});
 
+	//KNOW MORE ---------------------------------------------------------------------
+	$("a").click(function(){
+		var got_classes = $(this).attr('class').split(" ");
+		var accept_click = false;
+		var myclass = "";
+		for(var i = 0; i < got_classes.length; i++){
+			if(got_classes[i] === 'know-more'){
+				myclass = got_classes[i+1];
+				accept_click = true;
+				break;
+			}
+		}
+		if(accept_click){
+			sessionStorage.setItem("openProject", myclass);
+			window.location.href = "projects/projeto.html"
+		}
+	});
+
 	//-------------------------------------------------------------------------------
 
 	var NavMainHeight = $("div.nav-main").height();

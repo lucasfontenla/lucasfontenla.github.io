@@ -19,7 +19,7 @@
   	}
 
 	var file = new XMLHttpRequest();
-	file.open("GET", "projects/texto_projetos.txt", true);
+	file.open("GET", "https://lucasfontenla.github.io/projects/texto_projetos.txt", true);
 	file.onload = function (e) {
 	  var read_text = file.responseText;
 	  proj_text = getTEXT(read_text, sessionStorage.openProject);

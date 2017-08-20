@@ -2,19 +2,27 @@
   $(function(){
 
   	function getTEXT(text, proj){
+  		console.log("Projeto: " + proj);
   		var each_proj = text.split("#");
+  		console.log(each_proj);
   		var this_proj_text = ""
+
   		for(var i = 1; i < each_proj.length; i++){
-  			if(each_proj[i].split(";")[0] === proj){
+  			console.log("Item a comparar: " + each_proj[i].split(";")[0]);
+  			if(each_proj[i].split(";")[0] == (proj)){
   				this_proj_text = each_proj[i].split(";");
   				break;
   			}
   		}
+
+  		console.log(this_proj_text);
+
   		var sections = ['class', 'title', 'images', 'content', 'people', "related"];
   		var text_dict = {};
-  		for (var i = T0; i < sections.length; i++) {
+  		for (var i = 0; i < sections.length; i++) {
   			text_dict[sections[i]] = this_proj_text[i];
   		}
+  		console.log(text_dict);
   		return text_dict;
   	}
 

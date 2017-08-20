@@ -23,13 +23,16 @@
   	function writeHTML(text){
   		var title = text['title'];
   		var content = text['content'];
+  		var images = text['images'].split('!:');
 
   		codeHTML =  `
   		<h1 class="header thin white-text"><mark class="z-depth-3 project-title">` + title + `</mark></h1>
-  		         <div class="blue-grey-text text-darken-4">
-  		         	<p>` + content + `</p>
-  		         </div>`
-  		$("div.write-here").append(codeHTML);
+  		         <div class="blue-grey-text text-darken-4">` + content + `</div>`;
+
+     	console.log(codeHTML);
+
+  		$("div.container.write-here").append(codeHTML);
+  		$("div.container.write-here").load();
   	}
 
 	var file = new XMLHttpRequest();
@@ -37,9 +40,7 @@
 	file.onload = function (e) {
 	  var read_text = file.responseText;
 	  proj_text = getTEXT(read_text, sessionStorage.openProject);
-	  console.log(proj_text);
-	  $("h1 mark.project-title").text(proj_text['title']);
-	  $("p.project-content").text(proj_text['content']);
+	  writeHTML(proj_text);
 	};
 
 	file.onerror = function (e) {

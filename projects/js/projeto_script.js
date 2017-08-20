@@ -10,7 +10,7 @@
   				break;
   			}
   		}
-  		var sections = ['title', 'images', 'content', 'people', "related"];
+  		var sections = ['class', 'title', 'images', 'content', 'people', "related"];
   		var text_dict = {};
   		for (var i = T0; i < sections.length; i++) {
   			text_dict[sections[i]] = this_proj_text[i];
@@ -19,7 +19,7 @@
   	}
 
 	var file = new XMLHttpRequest();
-	file.open("GET", "../texto_projetos.html", true);
+	file.open("GET", "texto_projetos.txt", true);
 	file.onload = function (e) {
 	  var read_text = file.responseText;
 	  proj_text = getTEXT(read_text, sessionStorage.openProject);

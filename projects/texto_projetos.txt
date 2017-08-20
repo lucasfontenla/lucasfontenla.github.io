@@ -1,6 +1,6 @@
 ﻿!projects
 #
-tug-war;
+cicloide;
 Tug War;
 img/abcd.jpg;
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

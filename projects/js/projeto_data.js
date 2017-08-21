@@ -12,7 +12,7 @@
   			}
   		}
 
-  		var sections = ['class', 'title', 'images', 'content', 'people', 'related'];
+  		var sections = ['class', 'title', 'content', 'people'];
   		var text_dict = {};
   		for (var i = 0; i < sections.length; i++) {
   			text_dict[sections[i]] = this_proj_text[i];

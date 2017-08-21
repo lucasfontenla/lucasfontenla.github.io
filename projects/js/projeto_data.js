@@ -21,17 +21,10 @@
   	}
 
   	function writeHTML(text){
-  		var width = $("div.container.write-here").width();
   		var codeHTML = "";
 
   		var title = text['title'];
   		codeHTML += `<h1 class="header thin white-text"><mark class="z-depth-3 project-title">` + title + `</mark></h1>`;
-
-  		var images = text['images'].split('!:');
-  		for(var i = 0; i < images.lenght; i++){
-  			var image = images[i];
-  			//insert HTML part here
-  		}
 
   		var content = text['content'];
   		codeHTML += `<div class="blue-grey-text text-darken-4">` + content + `</div>`;
@@ -43,8 +36,6 @@
   			person = people[i];
   			//insert HTML part here
   		}
-
-  		var related = "" //still beta version ;)
 
   		$("div.container.write-here").append(codeHTML);
   	}
